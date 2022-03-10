@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "workspaces": [
-    "css",
+    "scss",
     "typescript",
     "vue",
     "design-pattern",
