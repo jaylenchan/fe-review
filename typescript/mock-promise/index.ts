@@ -46,42 +46,97 @@ export default class MyPromise {
    * (3)promise,这时候就会根据promise的结果来处理。如果成功，直接传递给下一个promise中then的then的参数onFulfilled反之就是onRejected
    */
   public then(onFulfilled: (...args: any[]) => any, onRejected: (...args: any[]) => any) {
-    return new MyPromise((resolve, reject) => {
+    const promise = new MyPromise((resolve, reject) => {
       if (this.status === MyPromise.FULFILLED) {
-        try {
-          const value = onFulfilled(this.value)
-          resolve(value)
-        } catch (err) {
-          reject(err)
-        }
-      } else if (this.status === MyPromise.REJECTED) {
-        try {
-          const reason = onRejected(this.reason)
-          resolve(reason)
-        } catch (err) {
-          reject(err)
-        }
-      } else {
-        // 异步代码调用才可能用了then方法这里还是PENDING
-        // 订阅
-        this.onResolvedCallbacks.push(() => {
+        setTimeout(() => {
           try {
             const value = onFulfilled(this.value)
+            this.resolvePromise(promise, value, resolve, reject)
             resolve(value)
           } catch (err) {
             reject(err)
           }
-        })
-        // 订阅
-        this.onRejectedCallbacks.push(() => {
+        }, 0)
+      } else if (this.status === MyPromise.REJECTED) {
+        setTimeout(() => {
           try {
             const reason = onRejected(this.reason)
-            resolve(reason)
+            this.resolvePromise(promise, reason, resolve, reject)
           } catch (err) {
             reject(err)
           }
+        }, 0)
+      } else {
+        // 异步代码调用才可能用了then方法这里还是PENDING
+        // 订阅
+        this.onResolvedCallbacks.push(() => {
+          setTimeout(() => {
+            try {
+              const value = onFulfilled(this.value)
+              this.resolvePromise(promise, value, resolve, reject)
+              resolve(value)
+            } catch (err) {
+              reject(err)
+            }
+          }, 0)
+        })
+        // 订阅
+        this.onRejectedCallbacks.push(() => {
+          setTimeout(() => {
+            try {
+              const reason = onRejected(this.reason)
+              this.resolvePromise(promise, reason, resolve, reject)
+              resolve(reason)
+            } catch (err) {
+              reject(err)
+            }
+          }, 0)
         })
       }
     })
+
+    return promise
+  }
+
+  private resolvePromise(
+    promise: MyPromise,
+    x: any,
+    resolve: (...args: any[]) => any,
+    reject: (...args: any[]) => any
+  ) {
+    // promise 和 x指向同一个promise要报错
+    if (promise === x) throw TypeError('Chaining cycle detected for promise #<Promise>')
+    // 自己写的promise要和别人的兼容
+    if ((typeof x === 'object' && x !== null) || typeof x === 'function') {
+      let called = false
+      try {
+        // 有可能then是通过Object.defineProperty实现的，这种实现方式取值如果没有是会报错的
+        let then = x.then
+        if (typeof then === 'function') {
+          // 这里就可以认为x是promise了
+          then.call(
+            x,
+            (y: any) => {
+              if (called) return
+              called = true
+              this.resolvePromise(promise, y, resolve, reject)
+            },
+            (r: any) => {
+              if (called) return
+              called = true
+              reject(r)
+            }
+          ) // 等价于x.then()
+        } else {
+          resolve(x)
+        }
+      } catch (err) {
+        if (called) return
+        called = true
+        reject(err)
+      }
+    } else {
+      resolve(x) // 这里说明返回的就是一个普通的值，直接放入promise的resolve
+    }
   }
 }
