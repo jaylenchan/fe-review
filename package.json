@@ -26,5 +26,8 @@
   },
   "scripts": {
     "test": "jest --watch"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
   }
 }
