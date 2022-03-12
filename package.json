@@ -10,7 +10,8 @@
     "vue",
     "design-pattern",
     "engineering",
-    "network"
+    "network",
+    "test"
   ],
   "devDependencies": {
     "@babel/core": "^7.17.5",
