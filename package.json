@@ -17,6 +17,7 @@
     "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
+    "@types/axios": "^0.14.0",
     "@types/jest": "^27.4.1",
     "@types/jquery": "^3.5.14",
     "babel-jest": "^27.5.1",
@@ -29,7 +30,6 @@
     "test": "jest --watch"
   },
   "dependencies": {
-    "axios": "^0.26.1",
-    "jquery": "^3.6.0"
+    "axios": "^0.26.1"
   }
 }
