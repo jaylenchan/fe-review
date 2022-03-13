@@ -1,10 +1,8 @@
 import { timer } from './'
 
-beforeEach(() => {
-  jest.useFakeTimers() // 必须在顶层调用useFakeTimers
-})
 describe('mock time', () => {
   test('jest.runAllTimers', () => {
+    jest.useFakeTimers() // 必须在顶层调用useFakeTimers
     const callback = jest.fn()
     timer(callback)
 
