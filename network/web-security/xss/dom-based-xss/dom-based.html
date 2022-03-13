@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <title>DOM Based XSS</title>
+</head>
+
+<body>
+  <!-- 需求：点击按钮“添加”， 就会把input中的输入的网址做成a标签放入container容器中 -->
+  <div id="container"></div>
+  <input type="text" id="website">
+  <button id="addBtn">添加</button>
+
+
+  <script>
+    $('#addBtn').click(function () {
+      const inputVal = $('#website').val()
+      let html = `<a href="${inputVal}">跳转</a>`;
+      $('#container').html(html)
+    })
+  </script>
+</body>
+
+</html>
