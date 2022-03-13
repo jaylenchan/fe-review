@@ -10,8 +10,8 @@
     "@types/express": "^4.17.13"
   },
   "scripts": {
-    "reflected:xss": "npx ts-node reflected-xss/server.ts",
-    "stored:xss": "npx ts-node stored-xss/server.ts",
-    "dom-based:xss": "npx ts-node dom-based-xss/server.ts"
+    "reflected:xss": "npx ts-node web-security/xss/reflected-xss/server.ts",
+    "stored:xss": "npx ts-node web-security/xss/stored-xss/server.ts",
+    "dom-based:xss": "npx ts-node web-security/xss/dom-based-xss/server.ts"
   }
 }
