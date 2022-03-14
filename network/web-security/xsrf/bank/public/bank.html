@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+  <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+    </script>
+  <title>中国工商银行</title>
+</head>
+
+<!-- 需求：输入对方的用户名，输入转账金额，就能够向对方转指定的金额 -->
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 align="center">中国工商银行</h1>
+            <h2>
+              <span>用户名：</span>
+              <span id="username"></span>
+            </h2>
+            <h2>
+              <span>余额：</span>
+              <span id="balance"></span>
+            </h2>
+          </div>
+          <div class="panel-footer">
+            <form onsubmit="transfer(event)">
+              <div class="form-group">
+                <label for="target">对方用户名</label>
+                <input type="text" id="target" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="amount">金额</label>
+                <input type="text" id="amount" class="form-control">
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-primary">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      getUserInfo()
+    })
+    function getUserInfo() {
+      // 获取用户登录详情
+      $.get('/api/userinfo', function (res) {
+        if (res.code === 0) {
+          const user = res.user;
+          $('#username').html(user.username);
+          $('#balance').html(user.balance);
+        } else {
+          alert(res.error);
+          location.href = "/login.html";
+        }
+      })
+    }
+    function transfer(event) {
+      event.preventDefault();
+      const target = $('#target').val();
+      const amount = $('#amount').val();
+      $.post('/api/transfer', { target, amount })
+        .then(res => {
+          if (res.code === 0) {
+            getUserInfo()
+          } else {
+            alert(res.error)
+          }
+        })
+    }
+  </script>
+</body>
+
+</html>
