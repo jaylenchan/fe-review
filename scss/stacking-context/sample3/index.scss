@@ -1,0 +1,45 @@
+/**
+ 1. box虽然设置了非static的position
+*/
+div {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+p {
+  font-size: 20px;
+}
+
+html {
+  body {
+    .parent-a {
+      position: relative;
+      z-index: auto;
+      & .child-a {
+        position: absolute;
+        z-index: 2;
+        &.others {
+          width: 300px;
+          height: 150px;
+          background: #168bf5;
+          top: 300px;
+        }
+      }
+    }
+  }
+
+  .parent-b {
+    position: relative;
+    z-index: auto;
+    & .child-a {
+      position: absolute;
+      z-index: 1;
+      &.others {
+        width: 200px;
+        height: 300px;
+        background: #32c292;
+        top: -100px;
+      }
+    }
+  }
+}

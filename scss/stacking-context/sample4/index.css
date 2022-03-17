@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/**
+ 1. box虽然设置了非static的position
+*/
+div {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 20px;
+}
+
+html body .parent-a {
+  position: relative;
+  z-index: 0;
+}
+
+html body .parent-a .child-a {
+  position: absolute;
+  z-index: 2;
+}
+
+html body .parent-a .child-a.others {
+  width: 300px;
+  height: 150px;
+  background: #168bf5;
+  top: 300px;
+}
+
+html .parent-b {
+  position: relative;
+  z-index: 0;
+}
+
+html .parent-b .child-a {
+  position: absolute;
+  z-index: 1;
+}
+
+html .parent-b .child-a.others {
+  width: 200px;
+  height: 300px;
+  background: #32c292;
+  top: -100px;
+}
+/*# sourceMappingURL=index.css.map */
