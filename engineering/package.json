@@ -2,5 +2,9 @@
   "name": "engineering",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/tapable": "^2.2.2",
+    "tapable": "1.1.0"
+  }
 }
