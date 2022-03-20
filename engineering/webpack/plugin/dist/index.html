@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+
+<head>
+  <script>
+    window.resource_url = '//cdn-res.esmatch.cn/resource/competition/'
+  </script>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="webkit" name="renderer">
+  <meta content="width=device-width" name="viewport">
+  <link href="//cdn-res.esmatch.cn/resource/competition/img/logo-yisai.d569b0e.png" rel="icon">
+  <meta content="jVwO3KYPZY" name="baidu-site-verification">
+  <meta content="翼赛,竞赛,测评,区域竞赛,校级竞赛" name="keywords">
+  <meta
+    content="翼赛,基于EKAI人工智能体系、K12标准化语音评测引擎、AES作文智能批改引擎、大数据分析和可视化引擎,为k12用户提供听说读写全流程、全自动、智能化批改和数据分析服务;致力于改变传统竞赛模式，支持区域、学校、社会化竞赛等多钟规模和各种形式的竞赛组织，助力全国教育信息化的全面实现。"
+    name="description">
+  <title>登录-翼赛</title>
+  <!--[if lt IE 9]>
+      <script src="//cdn-res.esmatch.cn/resource/common/html5shiv.min.js?v=1.0.113740"></script>
+      <script src="//cdn-res.esmatch.cn/resource/common/respond.min.js?v=1.0.113740"></script>
+      <script src="//cdn-res.esmatch.cn/resource/common/es5-shim.min.js?v=1.0.113740"></script>
+      <script src="//cdn-res.esmatch.cn/resource/common/es5-sham.min.js?v=1.0.113740"></script>
+      <script src="//cdn-res.esmatch.cn/resource/common/console-polyfill.min.js?v=1.0.113740"></script>
+    <![endif]-->
+  <script>
+    var __ROOT__ = "//www.ekwing.com/";
+    var __LOGINDOMAIN = "//passport.ekwing.com/";
+    var PP_REG_SDK_DOAMIN = "//passport.ekwing.com";
+    var __URL__ = "https://passport.ekwing.com";
+    var __ESROOT__ = "//" + location.host
+    // var provinceList = {"A-G":[{"id":"82","name":"\u5b89\u5fbd","key":"A","allkey":"AH"},{"id":"76","name":"\u5317\u4eac","key":"B","allkey":"BJ"},{"id":"101","name":"\u91cd\u5e86","key":"C","allkey":"CQ"},{"id":"97","name":"\u798f\u5efa","key":"F","allkey":"FJ"},{"id":"85","name":"\u5e7f\u4e1c","key":"G","allkey":"GD"},{"id":"96","name":"\u7518\u8083","key":"G","allkey":"GS"},{"id":"86","name":"\u5e7f\u897f","key":"G","allkey":"GX"},{"id":"99","name":"\u8d35\u5dde","key":"G","allkey":"GZ"}],"H-K":[{"id":"90","name":"\u6cb3\u5317","key":"H","allkey":"HB"},{"id":"94","name":"\u6e56\u5317","key":"H","allkey":"HB"},{"id":"105","name":"\u9ed1\u9f99\u6c5f","key":"H","allkey":"HLJ"},{"id":"91","name":"\u6cb3\u5357","key":"H","allkey":"HN"},{"id":"93","name":"\u6d77\u5357","key":"H","allkey":"HN"},{"id":"95","name":"\u6e56\u5357","key":"H","allkey":"HN"},{"id":"78","name":"\u5409\u6797","key":"J","allkey":"JL"},{"id":"88","name":"\u6c5f\u82cf","key":"J","allkey":"JS"},{"id":"89","name":"\u6c5f\u897f","key":"J","allkey":"JX"}],"L-S":[{"id":"100","name":"\u8fbd\u5b81","key":"L","allkey":"LN"},{"id":"75","name":"\u5185\u8499\u53e4","key":"N","allkey":"NMG"},{"id":"81","name":"\u5b81\u590f","key":"N","allkey":"NX"},{"id":"103","name":"\u9752\u6d77","key":"Q","allkey":"QH"},{"id":"79","name":"\u56db\u5ddd","key":"S","allkey":"SC"},{"id":"83","name":"\u5c71\u4e1c","key":"S","allkey":"SD"},{"id":"73","name":"\u4e0a\u6d77","key":"S","allkey":"SH"},{"id":"84","name":"\u5c71\u897f","key":"S","allkey":"SX"},{"id":"102","name":"\u9655\u897f","key":"S","allkey":"SX"}],"T-Z":[{"id":"80","name":"\u5929\u6d25","key":"T","allkey":"TJ"},{"id":"77","name":"\u53f0\u6e7e","key":"T","allkey":"TW"},{"id":"98","name":"\u897f\u85cf","key":"X","allkey":"XC"},{"id":"104","name":"\u9999\u6e2f","key":"X","allkey":"XG"},{"id":"87","name":"\u65b0\u7586","key":"X","allkey":"XJ"},{"id":"107","name":"\u7ffc\u8bfe\u7f51","key":"Y","allkey":"YKW"},{"id":"74","name":"\u4e91\u5357","key":"Y","allkey":"YN"},{"id":"92","name":"\u6d59\u6c5f","key":"Z","allkey":"ZJ"}]};
+    var provinceList = { "A-G": [{ "id": "82", "name": "\u5b89\u5fbd", "key": "A", "allkey": "AH" }, { "id": "76", "name": "\u5317\u4eac", "key": "B", "allkey": "BJ" }, { "id": "101", "name": "\u91cd\u5e86", "key": "C", "allkey": "CQ" }, { "id": "97", "name": "\u798f\u5efa", "key": "F", "allkey": "FJ" }, { "id": "85", "name": "\u5e7f\u4e1c", "key": "G", "allkey": "GD" }, { "id": "96", "name": "\u7518\u8083", "key": "G", "allkey": "GS" }, { "id": "86", "name": "\u5e7f\u897f", "key": "G", "allkey": "GX" }, { "id": "99", "name": "\u8d35\u5dde", "key": "G", "allkey": "GZ" }], "H-K": [{ "id": "90", "name": "\u6cb3\u5317", "key": "H", "allkey": "HB" }, { "id": "94", "name": "\u6e56\u5317", "key": "H", "allkey": "HB" }, { "id": "105", "name": "\u9ed1\u9f99\u6c5f", "key": "H", "allkey": "HLJ" }, { "id": "91", "name": "\u6cb3\u5357", "key": "H", "allkey": "HN" }, { "id": "93", "name": "\u6d77\u5357", "key": "H", "allkey": "HN" }, { "id": "95", "name": "\u6e56\u5357", "key": "H", "allkey": "HN" }, { "id": "78", "name": "\u5409\u6797", "key": "J", "allkey": "JL" }, { "id": "88", "name": "\u6c5f\u82cf", "key": "J", "allkey": "JS" }, { "id": "89", "name": "\u6c5f\u897f", "key": "J", "allkey": "JX" }], "L-S": [{ "id": "100", "name": "\u8fbd\u5b81", "key": "L", "allkey": "LN" }, { "id": "75", "name": "\u5185\u8499\u53e4", "key": "N", "allkey": "NMG" }, { "id": "81", "name": "\u5b81\u590f", "key": "N", "allkey": "NX" }, { "id": "103", "name": "\u9752\u6d77", "key": "Q", "allkey": "QH" }, { "id": "79", "name": "\u56db\u5ddd", "key": "S", "allkey": "SC" }, { "id": "83", "name": "\u5c71\u4e1c", "key": "S", "allkey": "SD" }, { "id": "73", "name": "\u4e0a\u6d77", "key": "S", "allkey": "SH" }, { "id": "84", "name": "\u5c71\u897f", "key": "S", "allkey": "SX" }, { "id": "102", "name": "\u9655\u897f", "key": "S", "allkey": "SX" }], "T-Z": [{ "id": "80", "name": "\u5929\u6d25", "key": "T", "allkey": "TJ" }, { "id": "77", "name": "\u53f0\u6e7e", "key": "T", "allkey": "TW" }, { "id": "98", "name": "\u897f\u85cf", "key": "X", "allkey": "XC" }, { "id": "104", "name": "\u9999\u6e2f", "key": "X", "allkey": "XG" }, { "id": "87", "name": "\u65b0\u7586", "key": "X", "allkey": "XJ" }, { "id": "107", "name": "\u7ffc\u8bfe\u7f51", "key": "Y", "allkey": "YKW" }, { "id": "74", "name": "\u4e91\u5357", "key": "Y", "allkey": "YN" }, { "id": "92", "name": "\u6d59\u6c5f", "key": "Z", "allkey": "ZJ" }] };
+  </script>
+  <link href="//cdn-res.esmatch.cn/resource/competition/css/chunk-common.831da7c9.css" rel="stylesheet">
+  <link href="//cdn-res.esmatch.cn/resource/competition/css/loginEkwing.f805872f.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header-zj clearfix">
+    <div class="header-zj-wrap">
+      <span class="header-zj-name float-l">助教</span>，您好：
+      <span class="header-zj-logout float-r">退出</span>
+    </div>
+  </div>
+  <header class="sc-header">
+    <div class="header-box clearfix">
+      <div class="header-box-logo float-l">
+        <img alt="" src="//cdn-res.esmatch.cn/resource/competition/img/logo-yisai.d569b0e.png"
+          class="header-box-logo-img"><span class="header-box-logo-text">翼赛</span>
+      </div>
+      <nav class="header-box-nav float-l">
+        <a href="//www.esmatch.cn/pc/home/index" class="link active">我的竞赛</a>
+        <a href="//youxue.esmatch.cn/pc/web/index/course/home" class="link">翼赛优学</a>
+        <div class="live dropdown-box">
+          <div class="label">
+            名师直播
+          </div>
+          <div class="dropdown">
+            <ul>
+              <li class="dropdown-item" data-event="goUserInfo">
+                <a href="https://appFzOpcuCo8610.h5.xeknow.com/st/0kAScwCHW" target="_blank">广东-名师直播课</a>
+              </li>
+              <li class="dropdown-item" data-event="goUserInfo">
+                <a href="https://appFzOpcuCo8610.h5.xeknow.com/st/9Nvp8WwNe" target="_blank">广州-名师直播课</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-box-user float-r">
+        <div class="header-box-user-info">
+          <span class="header-box-user-info-profile"><img alt=""
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAMAAAAPdrEwAAAAzFBMVEUAAADu7u7u7u7w8PDu7u7v7+/u7u7u7u7y8vLu7u7x8fHv7+/x8fHu7u7x8fHx8fHw8PDu7u7u7u7u7u76+vru7u7u7u7u7u7u7u7u7u7u7u79/f3u7u739/fu7u75+fnu7u7u7u7u7u7u7u7u7u78/Pz39/f9/f38/Pz7+/v7+/v6+vr6+vru7u76+vr5+fnu7u739/fu7u74+Pju7u7u7u739/f6+vr8/Pzu7u7u7u7////+/v729vbw8PD09PT8/Pz6+vr4+Pjy8vLvp/HDAAAAOnRSTlMA9tsFXvLrjy/vIBcC53Q6D8HgyMW7pZiGgQ37xVZAl4lQLCgV8kn58Ozg19bRzbWbkXlmUx0K+PM//P8PegAAA0FJREFUWMO12IlSIjEQBuCeAxi5BhAEFETB+753t5PM+f7vtNZaliDpJJOs3wN0df3pySQBA0EUTvZmfr2G3o5/O9ubhFEA7trxtO/hFq8/jdvg4s+4jqT6+BAs9bo+avjdHlTXatTQQK3Rgmr2Jx4a8ib7UEHYwQo6IZhqjrCiUdOw5R2sbMek8eABrTwE2sHYRUu7mlFZDdDaYAUKUQcddCIgLVULWIqiKESaqBZzCYTXAV03Z58yocjkFaROfCQkOVvHU6T4J9KpI2dDsO/yhJwT2Qw2kFCwbRlZuwFbjtWVzWsfb+0b1HCkTC4jx+T7fjKiVpAzgiD3KtgQ0nFQOFLCjZ2f/AoZiW67sw9fjlCftHnaeLS23XlIyJkCOSReSz/SyJlCitrh7tWQkDAVgZTa5xmii3alCyR14YP//0v78M8hWpemfZzZxkhj6mWkjeFdu460jCmUSKu3ASBGBcFoHFViAJiiQqKJmjYFgD6q5OqPkdYHCDxUKS2bRi+ACNUElXSCahGEqJFT46ERwgR1MmKmNSawh1i9b16i1h7MUE9w8hhCm4GPBpL14nmJJnyoo5lS5Nm7Ik3QTB1q+ENqgD8GPPwp5lmnQohCiLRMTAMZoFaSFtnGVOeiNFnGW9RIpV96ViTa4eurGy44I+jme6b+0AVTykrlh/6kiILo2GzTfoIXpEgzNt+oXmBJDdvXUNg1vqR+YCkzllM/MOi7VKYP2n3isEBUJmsTh4WYrOyUSSw9mJWcVVVIDmay4yQ9G+ZHy7H0EFwwCzyRHYLBJ4J2iNuHD10iDodIurJrkmCWuOyatH65SzizJWQvFy2PaNqyba8lu0h/Ne2Q9pHs+p8yB5ns+g+h+R6tv7SHsGFE5GGxkCPpA1HJnOTSByI4pufDnPRZC6BRLWrqFtIgnhA5c5PibkA8fDJHYnACUqsac/RrBYQzx0D4HEhz7l6Z7PuAWTs4A6XolFn6HYFG75pZue6B3qNF4HwBRuJLVtFlDKYeK61mtmiDudbQOBU+bEI10R03KnwXQXXNe20sB/dNsNPu3nBFwzfdNjgInocXXFL2YvgcgLu3+WJ4dXrO+XtJfn56NVzM30DvL/8moueRQMaiAAAAAElFTkSuQmCC">
+          </span><span class="header-box-user-info-name"></span><i class="iconfont icon-arrowdown"></i>
+        </div>
+        <div class="header-box-user-dropdown dropdown">
+          <ul>
+            <li class="header-box-user-dropdown-item" data-event="goUserInfo">个人信息</li>
+            <li class="header-box-user-dropdown-item" data-event="goSetAccount">我的订单</li>
+            <li class="header-box-user-dropdown-item" data-event="quit">退出</li>
+          </ul>
+        </div>
+      </div>
+      <a href="/pc/public/login" class="header-box-back float-r"><i class="iconfont icon-back"></i>返回登录页</a>
+      <div class="header-box-download float-r">
+        <div>
+          <i class="iconfont icon-shouji_icon"></i><span class="header-box-download-text">手机APP下载</span>
+        </div>
+        <div class="header-box-download-dropdown dropdown">
+          <div>
+            <img alt="" src="//cdn-res.esmatch.cn/resource/competition/img/scan-esmatch.01b0755.png">
+          </div>
+          <div class="header-box-download-dropdown-text">扫码下载翼赛APP</div>
+        </div>
+      </div>
+      <div class="header-box-download float-r">
+        <div>
+          <i class="iconfont iconweixinxiaochengxu wechat"></i><span class="header-box-download-text">微信小程序</span>
+        </div>
+        <div class="header-box-download-dropdown dropdown">
+          <div>
+            <img alt="" src="//cdn-res.esmatch.cn/resource/competition/img/es-xcx.195984d.jpg">
+          </div>
+          <div class="header-box-download-dropdown-text">微信扫码学习</div>
+        </div>
+      </div>
+      <div class="tip-card">
+        <div class="tip-card-content">
+          <div>想参与翼课学生竞赛？</div>
+          <span>点击查看</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="app">
+    <div class="loginWrap">
+      <main class="login">
+        <div class="login-box">
+        </div>
+      </main>
+    </div>
+    <footer class="sc-footer">
+      <div class="footer-box clearfix">
+        <div class="float-l">
+          <div class="footer-box-nav">
+            <a href="http://www.ekwing.com/about/aboutus" target="_blank">关于我们</a><span class="space"></span>
+            <a href="http://www.ekwing.com/about/employment" target="_blank">加入我们</a><span class="space"></span>
+            <a href="https://www.esmatch.cn/pc/public/privatecontract" target="_blank">隐私保护</a><span
+              class="space"></span>
+            <a href="https://www.esmatch.cn/pc/public/servicecontract" target="_blank">服务条款</a>
+          </div>
+          <div class="footer-box-ministry">
+            <span>Copyright ©2014-2020 Ekwing. All Rights Reserved.</span>
+            <a href="http://beian.miit.gov.cn" target="_blank" class="footer-box-ministry-ICP">粤ICP备14042221号</a>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011302002109" target="_blank"
+              class="footer-box-ministry-police"><img alt=""
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAMAAAC3SZ14AAAC31BMVEUAAADz6KqdaFjeqFfYrn3x167//ez//93//+roxnzhs2jbrGLkvFnpyF7v2X/kwm3cp1nhsGfqw3rZqG3ntVzjrFPt3oDjvGnfr2fbnFGti3q0lH7ktoLryXn9v1T4znr/74bnvGz034v+2I/ktoDz6ZLkwY/Dfz7buoftzYbq2IPr0pjs3bLv6KPRrnbKhFv79ND488n/+dDZr4Lx38f/+cH/95f42oL7/97s2Y3w1rvTk3D78sD///MAAXgBAW7qvFoAAGXktV3XPiDWHRfOAAJqe4xyeIIAAIDu1nIGA2jtzWbwzGLpwWDqyl/qxV//217mulu7jluTeFr/0lnrwFfmt1fislP+xVLkvlFRNlHmr0reo0nVkEbemUTcnUPekz3XdTg5FDjdhTXtcTDWZTC7TCbTOCLJPR/UIRnQFg2Ej5kcPpdyhZSptJEACJEAG44XMInFvYfTvIejmYRrc4SVkIO9un6SjX7FrnwAEHp8enny2HjWwHjKtnhcX3jYzHeNhneUjHX34nSsonPz5HLNwnH70m/xym9WTm//723yy23pym3x02ndtmn/0mbnxGa0o2ZeWWb8zGT/4mPtwmJuYmL/vmB5ZGAMAF3px1zuyFqnjVn4xFjYnli0mVjiqVf/01byyVbmwFXXkVPpt1LNrFKjfVLmsVHuvlDjsFBgHlDsuU/ouU/ov05ODk7/2E02Gk3gpEzpsUvjqkralkqEaUr/tUnwr0jgjkf7n0bXikb6xERCJET0sEDngj+1gD/ooD3Ulj3jkz3Thz3Sgz3qgj3TZT3WjjzOeDqBWDr3pDlMADnbbTf2gjbkbzaTYDZpAjbplzTEazPXXzOeXzDMPi38jizJWSrZTirVSCrrXynaSynzfCjVdCjZRyjTQCbFUiTlYCPWMR/wXh7iRh7PLBr9LRTMJxPGJxPRDBG/ABG2ABCxDg7BDAvUAwv9KwrEGArTBAjZAAbJAAIUUVUoAAAAPnRSTlMAQvnGrGkeGgj7+fX08Ozs6+fm5eTk4eDb0tHLx8TDwb68urKxq5+cmJWTjIN8b11cWkxIQUE1MCknHBQKBxdQLUcAAAFtSURBVBjTYoAAdlZpKVZ2BgQwZWG6emrbciYWI5gIR1DShcuPUvpakoJsISJs8lHBdz+l33TdlRelzAESseDaOOl6Zuaz+1nvppfuFbIECpk1ecx58v6xy6v0L7fL7RvNGRis5CrsDjz97OLs7OLq3GBfrcDGoHe6xGP+OdcbhyJ3ZqW02Zct1GHQuFSZP21PWkZq4tndU2bYFe1TYxBO7sixTzt2K+PKg/PHvQprEiQAY+A+uT3X7s2H1IeJ+5+/9nKLOCLOoBI/ubjgzNuPL1/cuXaxqq49XJNBJmFBf7ado+P61TMd7dwDnLbIMnDOW3K4uzbYbeKy+k73qQfjo/kYDCNjYu/NDdgQsSOkKyQ5NtyPkYHBgHfx0RPeDiscfHrjtvbwA0UYTARn+YeF+vv6OMSEeU4QAAkpNXs6OTms8l0atykw0LtVFShko8WzdtHKzWuiQ2ev8xPThQSYtb46s6SoCLOitjGICwAJH4azI3gYFAAAAABJRU5ErkJggg=="><span>粤公网安备
+                44011302002109号</span></a>
+          </div>
+        </div>
+        <div class="footer-box-wechat float-r">
+          <img alt="" src="//cdn-res.esmatch.cn/resource/competition/img/es-wechat.9aa8949.png"
+            class="footer-box-wechat-img">
+          <div class="footer-box-wechat-text">扫码关注 微信公众号</div>
+        </div>
+        <div class="footer-box-service float-r">
+          <img alt=""
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAt1BMVEUAAACWxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf+Wxf/////8/f/5/P/s9P/O5P/G4P+mzv/X6f/D3v+/3P+cyP+ax/+hy//0+f/v9v/l8f/b6/+52f/h7//U5/+x1P+u0v/2+v/c6/+01v+mhVjbAAAAI3RSTlMA+A0U++7BYAbf0KqhmIfxtKWPbkk/6Mawe1pSLy0sGsm4Szu1BEMAAAFlSURBVDjLbZJZYoIwFEUfoEABcZ61ts0DmXGutt3/uhpihCR6vm7C4ZKQgIA+mnuzXt9fbOAVY1cjD6aWDQrvJpF4W4KEpRGVjlgyYFPFTjJMAx502ET+E8qGo/PnQzaMUsRfIvHJ16ex9zELEa+yMWSCyfIR9zHiVha6RrX/ew4Qoy1iLBs+FVyWSkQM8qeKtg26Vjfg5XRMiMwXjHg6VBUJURnAnKcUeb+MCR5P56qheBImMOOpCLHZQ4MGPSJ8I9ypQgv6j5ggJVWFNvh1PiHlpggOLOqcBC824sGmGURIiWjYxSXhWADTWigPSMnKc1hpjJYBYDUVtwAr8qD+py4A2G+NkTFhGyFe7gUroCxJwzcz4j3imV1cYPRVI6RN++ru68DQPwQjq9aRHvFQku4aOIYjGMmJKnlM79sYavQeESiufwXtX4HIsK0cUkcHGcMXFM1dwzP2aGBOtFbb8SwDav4BPRttVu3CMp4AAAAASUVORK5CYII=">
+          <div class="footer-box-service-tel">400-013-0081</div>
+          <div class="footer-box-service-time">周一至周日9:00-22:00</div>
+        </div>
+        <div class="float-r"></div>
+      </div>
+    </footer>
+  </div>
+  <div id="ek-service"></div>
+  <script src="//cdn-res.esmatch.cn/resource/zg/track_zhuge_competition.js?v=1.0.113740"></script>
+  <script src="//cdn-res.esmatch.cn/resource/common/jquery.min.js?v=1.0.113740"></script>
+  <script src="//cdn-res.esmatch.cn/resource/common/jquery.md5.min.js?v=1.0.113740"></script>
+  <script>
+    var load = function (sUrl, fCallback) {
+      var _script = document.createElement('script');
+      _script.setAttribute('charset', 'gbk');
+      _script.setAttribute('type', 'text/javascript');
+      _script.setAttribute('src', sUrl);
+      document.getElementsByTagName('head')[0].appendChild(_script);
+
+    }
+    if (window.location.host == 'www.ekwing.com') {
+      load('//cdn-res.esmatch.cn/resource/passport/passport.js?v=');
+      load('//cdn-res.esmatch.cn/resource/passport/login.js?v=');
+      load('//cdn-res.esmatch.cn/resource/common/rsa.js?v=');
+      load('//cdn-res.esmatch.cn/resource/common/jsbn.js?v=');
+    } else {
+      load('//cdn-res.esmatch.cn/resource/passport/esNameLogin.js?v=1.0.113740');
+      load('//cdn-res.esmatch.cn/resource/passport/esQuickLogin.js?v=1.0.113740');
+    }
+  </script>
+  <script src="https://cdn.bootcss.com/Base64/1.0.1/base64.min.js"></script>
+  <script>
+    var clientName = '{"ek_info":[],"local_info":{"uid":"0","ek_uid":"0","period":"","name":"","phone":"","grade":"","school_name":""}}';
+    if (!clientName) clientName = '{}';
+
+    var userId = '0';
+    var nickName = '';
+    var qimoClientId = {};
+    var customField = {};
+
+    try {
+      var user_info = JSON.parse(clientName);
+      var local_info = user_info.local_info;
+      var ek_info = user_info.ek_info;
+    } catch (err) {
+      // console.log(err)
+    }
+
+    // 已登录
+    if (local_info && local_info.uid && local_info.uid !== '0') {
+      local_info.period = local_info.period || '';
+      local_info.grade = local_info.grade || '';
+      qimoClientId.userId = local_info.uid;
+
+      if (ek_info.ek_uid && ek_info.ek_uid !== '0') {
+        nickName = '绑定' + ek_info.name + '_' + ek_info.period + '_' + ek_info.school_name;
+        customField['绑定翼课学生UID'] = ek_info.ek_uid;
+        customField['绑定翼课学生姓名'] = ek_info.name;
+        customField['绑定翼课学生年级'] = ek_info.grade;
+        customField['绑定翼课学生学校'] = ek_info.school_name;
+      } else {
+        nickName = '未绑定翼课学生';
+        customField['绑定翼课学生UID'] = '未绑定';
+        customField['绑定翼课学生姓名'] = '未绑定';
+        customField['绑定翼课学生年级'] = '未绑定';
+        customField['绑定翼课学生学校'] = '未绑定';
+      }
+
+      customField['翼赛UID'] = local_info.uid;
+      customField['翼赛姓名'] = local_info.name || '空';
+      customField['翼赛年级'] = (local_info.period + local_info.grade) || '空';
+      customField['翼赛学校'] = local_info.school_name || '空';
+      customField['翼赛手机号'] = local_info.phone || '未绑定';
+      nickName += '_翼赛uid' + local_info.uid;
+    } else {
+      var randomId = sessionStorage.getItem('randomId');
+      if (!randomId) {
+        randomId = Number(Math.random().toString().substr(3, length) + Date.now()).toString(36);
+        sessionStorage.setItem('randomId', randomId);
+      }
+      nickName = '未登录游客' + randomId;
+      qimoClientId.userId = randomId;
+    }
+
+    qimoClientId.nickName = nickName;
+    qimoClientId.customField = customField;
+  </script>
+  <script
+    src="https://webchat.7moor.com/javascripts/7moorInit.js?accessId=3e1228b0-fc54-11e8-a76b-5bcecdfa1a25&autoShow=false&language=ZHCN"
+    async="async"></script>
+  <script src="//cdn-res.esmatch.cn/resource/competition/js/chunk-vendors.372bd6fe.js"></script>
+  <script src="//cdn-res.esmatch.cn/resource/competition/js/chunk-common.9278d478.js"></script>
+  <script src="//cdn-res.esmatch.cn/resource/competition/js/loginEkwing.00f07506.js"></script>
+<script src="main.js"></script></body>
+
+</html>

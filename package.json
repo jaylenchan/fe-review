@@ -20,6 +20,7 @@
     "@types/axios": "^0.14.0",
     "@types/jest": "^27.4.1",
     "@types/jquery": "^3.5.14",
+    "@types/webpack": "^5.28.0",
     "babel-jest": "^27.5.1",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.3",
