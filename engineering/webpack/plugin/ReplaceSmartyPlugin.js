@@ -22,6 +22,37 @@ module.exports = class ReplaceSmartyPlugin {
           cb()
         }
       )
+      compiler.hooks.compilation.tap('ReplaceSmartyPlugin', (compilation) => {
+        compilation.hooks.htmlWebpackPluginAlterAssetTags.tapAsync(
+          'ReplaceSmartyPlugin',
+          (data, cb) => {
+            const { head, body } = data
+            head.forEach((item) => {
+              let { href } = item.attributes
+              const resHref = rules.reduce((_, rule) => {
+                href = href.replace(
+                  new RegExp(rule + 'competition/', 'g'),
+                  'http://localhost:8080/'
+                )
+                return href
+              }, href)
+              item.attributes.href = resHref
+            })
+            body.forEach((item) => {
+              let { src } = item.attributes
+              const resSrc = rules.reduce((_, rule) => {
+                src = src.replace(
+                  new RegExp(rule + 'competition/', 'g'),
+                  'http://localhost:8080/'
+                )
+                return src
+              }, src)
+              item.attributes.href = resSrc
+            })
+            cb()
+          }
+        )
+      })
     })
   }
 }
