@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  webdev:
+    build:
+      context: './images'
+      dockerfile: 'Dockerfile.webdev'
+    image: 'webdev'
+    container_name: 'webdev'
+    ports:
+      - 80:80
+    networks:
+      - webdev
+    volumes:
+      - ..:/workspace:cached
+      - node_modules:/workspace/node_modules
+      - vscode-extensions:/root/.vscode-server/extensions
+
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    restart: always
+    extra_hosts:
+      wisdom.100efly.com: 127.0.0.1
+    env_file: devcontainer.env
+  whistle:
+    build:
+      context: './images'
+      dockerfile: 'Dockerfile.whistle'
+    image: 'whistle'
+    container_name: 'whistle'
+    ports:
+      - 90:90
+    networks:
+      - webdev
+    # 切记⚠️whistle插件安装在运行时下载，构建下载的话镜像有缓存，如果插件更新了，使用构建的方式下载除非自己清理镜像缓存否则不会使RUN这一层临时镜像重新构建的，产出的容器依然会是旧的插件
+    command: /bin/sh -c "w2 i whistle.bingo-admin-dev whistle.bingo-admin-test &&  w2 run --port 90"
+    restart: always
+
+volumes:
+  node_modules:
+  vscode-extensions:
+networks:
+  webdev:
+    ipam:
+      config: # 切记！⚠️即使修改了docker0默认的172.17.0.1/16也要显示指定自定义网络的网段，防止公司内网bingo服务器172.17.0.1/16网段被docker指定上而造成数据包转发堵塞
+      - subnet: 192.158.0.1/24
+        gateway: 192.158.0.1
