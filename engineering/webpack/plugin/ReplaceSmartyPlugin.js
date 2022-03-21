@@ -47,7 +47,7 @@ module.exports = class ReplaceSmartyPlugin {
                 )
                 return src
               }, src)
-              item.attributes.href = resSrc
+              item.attributes.src = resSrc
             })
             cb()
           }
