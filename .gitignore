@@ -1,3 +1,5 @@
 node_modules
 .vscode
 devcontainer.env
+.DS_Store
+.DS_Store?

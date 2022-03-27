@@ -1,0 +1,9 @@
+![img](../../../pic/Web开发流程图.png)
+## 总览
+`competition-pc-admin`是翼赛后台管理系统。该项目用于翼赛竞赛内容安排，当管理员在该平台进行竞赛布置之后，参与该竞赛的学生就可以在相关的平台入场竞赛。
+
+## 一、项目概述
+
+- 开发模式：前后端分离
+- 主要技术：Vue2+Js+Scss
+- 仓库地址：`https://gitlab.ekwing.com/gz-server/competition-pc-admin`
