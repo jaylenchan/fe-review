@@ -4,7 +4,7 @@
 
 ![img](pic/易辅管理员后台.png)
 
-![img](pic/Bingo PC校园版.png)
+![img](pic/bingo-pc校园版.png)
 
 ![img](pic/易辅家长小程序.png)
 
