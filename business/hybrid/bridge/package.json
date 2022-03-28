@@ -1,0 +1,24 @@
+{
+  "name": "@ekwing/jsbridge",
+  "amdName": "jsbridge",
+  "version": "1.4.13",
+  "description": "app jsbridge",
+  "main": "dist/jsbridge.js",
+  "module": "dist/jsbridge.es.js",
+  "jsnext:main": "dist/jsbridge.es.js",
+  "umd:main": "dist/jsbridge.umd.js",
+  "repository": "http://gitlab.ekwing.com/ed/jsbridge.git",
+  "author": "liangjiahui <liangjiahui@moyi365.com>",
+  "license": "GPL v3",
+  "scripts": {
+    "build": "rimraf dist && microbundle --external all && yarn build:doc",
+    "build:doc": "rimraf public && jsdoc -c .jsdocrc.js"
+  },
+  "devDependencies": {
+    "docdash": "^0.4.0",
+    "jsdoc": "^3.6.2",
+    "microbundle": "^0.6.0",
+    "rimraf": "^2.6.2",
+    "taffydb": "^2.7.3"
+  }
+}
