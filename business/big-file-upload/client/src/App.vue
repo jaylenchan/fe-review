@@ -8,9 +8,9 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'dd',
+  name: 'file-upload',
   setup() {
-    console.log('dd')
+    console.log('file-upload')
   }
 })
 </script>
