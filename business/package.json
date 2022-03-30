@@ -23,7 +23,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "scripts": {
-    "build:big-file-upload": "npx webpack --config ./big-file-upload/client/webpack.config.js",
-    "dev:big-file-upload": "npx webpack-dev-server --config ./big-file-upload/client/webpack.config.js"
+    "build:file-upload": "npx webpack --config ./file-upload/client/webpack.config.js",
+    "dev:file-upload": "npx webpack-dev-server --config ./file-upload/client/webpack.config.js"
   }
 }
