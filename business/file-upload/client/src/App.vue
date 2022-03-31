@@ -52,7 +52,7 @@ export default defineComponent({
     }
 
     function createChunks(file: File) {
-      const CHUNK_SIZE = 10 * 1024 * 1024
+      const CHUNK_SIZE = 2 * 1024 * 1024
       let cur = 0
       let index = 0
       const chunks: Array<Chunk> = []
@@ -71,11 +71,14 @@ export default defineComponent({
 
     async function uploadChunks(chunks: Array<Chunk>) {
       const chunkRequestList = chunks.map((chunk) => {
-        const { chunkForm } = new ChunkForm(chunk)
+        const { chunkForm, hash } = new ChunkForm(chunk)
         return axios({
           method: 'post',
           url: 'http://localhost:3000/chunk',
-          data: chunkForm
+          data: chunkForm,
+          onUploadProgress: function (progressEvent) {
+            console.log('hash=>', hash, progressEvent)
+          }
         })
       })
       await Promise.all(chunkRequestList)

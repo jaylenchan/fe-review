@@ -15,6 +15,7 @@ rimraf(path.resolve(__dirname, '..', 'target'), (err) => {
 const app = express()
 
 const fileStorePath = path.resolve(__dirname, '..', 'target')
+let extname = ''
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -34,6 +35,7 @@ app.post('/chunk', (req, res) => {
     const chunk = files.chunk[0]
     const hash = fields.hash[0] as string
     const filename = (fields.filename[0] as string).split('.')[0] as string
+    extname = path.extname(fields.filename[0])
     const chunkStorePath = getChunkStorePath(filename, fileStorePath)
 
     if (!fs.existsSync(chunkStorePath)) {
@@ -51,7 +53,7 @@ app.post('/merge', async (req, res) => {
   const data = req.body
   const filename = (data.filename as string).split('.')[0] as string
 
-  await mergeFileChunk(fileStorePath, filename, 10 * 1024 * 1024)
+  await mergeFileChunk(fileStorePath, filename, extname, 2 * 1024 * 1024)
 
   res.json({
     code: 0,

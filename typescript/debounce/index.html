@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debounce</title>
+</head>
+
+<body>
+  <div>
+    <iframe width="100%" height="500" src="https://juejin.cn/post/6844903669389885453"></iframe>
+  </div>
+  <div id="un-debounce-container">
+    <span>无防抖(un-debounce)的input</span>
+    <input type="text" id="un-debounce" />
+  </div>
+  <div id="debounce-container">
+    <span>防抖(debounce)的input</span>
+    <input type="text" id="debounce" />
+  </div>
+  <div id="throttle-container">
+    <span>节流(throttle)的input</span>
+    <input type="text" id="throttle" />
+  </div>
+
+  <script>
+    const unDebounceInput = document.getElementById('un-debounce')
+    const debounceInput = document.getElementById('debounce')
+    const throttleInput = document.getElementById("throttle")
+
+      ; (function () {
+        let index = 1
+        unDebounceInput.addEventListener("keyup", function () {
+          request(index)
+        })
+        function request() {
+          console.log('发起请求', index++)
+        }
+      }())
+
+      ; (function () {
+        let index = 1
+        debounceInput.addEventListener("keyup", debounce(function () {
+          request(index)
+        }, 1000))
+        function request() {
+          console.log('发起请求', index++)
+        }
+      }())
+
+      ; (function () {
+        let index = 1
+        throttleInput.addEventListener("keyup", throttle(function () {
+          request(index)
+        }, 2000))
+        function request() {
+          console.log('发起请求', index++)
+        }
+      }())
+
+
+
+    function debounce(fn, delay) {
+      return function (...args) {
+        clearTimeout(fn.timer)
+        fn.timer = setTimeout(() => {
+          fn.call(this, ...args)
+        }, delay)
+      }
+    }
+
+    function throttle(fn, delay) {
+      return function (...args) {
+        if (!fn.timer) {
+          fn.timer = setTimeout(() => {
+            fn.timer = null
+            fn.call(this, ...args)
+          }, delay)
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

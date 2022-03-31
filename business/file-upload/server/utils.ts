@@ -25,14 +25,14 @@ async function getChunkPaths(filePath, filename: string) {
   return chunkPaths
 }
 
-export async function mergeFileChunk(filePath, filename, size) {
+export async function mergeFileChunk(filePath, filename, extname, size) {
   const chunkStorePath = getChunkStorePath(filename, filePath)
   const chunkPaths = await getChunkPaths(filePath, chunkStorePath)
   await Promise.all(
     chunkPaths.map((chunkPath, index) => {
       return pipeStream(
         chunkPath,
-        fs.createWriteStream(path.resolve(filePath, filename + '.apk'), {
+        fs.createWriteStream(path.resolve(filePath, filename + extname), {
           start: index * size
         })
       )
