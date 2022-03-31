@@ -4,11 +4,23 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
     "element-plus": "^2.1.7",
+    "express": "^4.17.3",
+    "fs-extra": "^10.0.1",
+    "multiparty": "^4.2.3",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
     "vue": "^3.2.31"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
+    "@types/body-parser": "^1.19.2",
+    "@types/fs-extra": "^9.0.13",
+    "@types/multiparty": "^0.0.33",
+    "@types/rimraf": "^3.0.2",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.2.4",
     "clean-webpack-plugin": "^4.0.0",
