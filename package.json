@@ -12,7 +12,8 @@
     "engineering",
     "network",
     "test",
-    "business"
+    "business",
+    "leetcode"
   ],
   "devDependencies": {
     "@babel/core": "^7.17.5",
