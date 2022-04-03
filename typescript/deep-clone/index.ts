@@ -17,7 +17,7 @@ export default function deepClone(
 
     for (let key in target) {
       if (target.hasOwnProperty(key)) {
-        copy[key] = deepClone(target[key])
+        copy[key] = deepClone(target[key], hashmap)
       }
     }
     return copy
