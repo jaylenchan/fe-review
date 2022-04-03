@@ -8,11 +8,14 @@ describe('deep-clone', () => {
         name: 'dog',
         reg: /\d/,
         date: new Date()
-      }
+      },
+      freinds: [1, 2, 3]
     }
     const cloneObj = deepClone(obj)
 
     cloneObj.pet.reg = /\w/
+    cloneObj.freinds[0] = 4
     expect(cloneObj.pet.reg).not.toBe(obj.pet.reg)
+    expect(cloneObj.freinds[0]).not.toBe(obj.freinds[0])
   })
 })
