@@ -4,3 +4,4 @@ devcontainer.env
 .DS_Store
 .DS_Store?
 ekwing-project.md
+*.log
