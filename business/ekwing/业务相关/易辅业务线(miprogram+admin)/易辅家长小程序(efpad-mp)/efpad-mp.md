@@ -5,7 +5,7 @@
 
 - 开发模式：前后端分离
 - 主要技术：Taro+Vue3+TypeScript+Scss
-- 项目地址：`https://gitlab.ekwing.com/wisdom/fe/efpad-mp`
+- 项目地址：
 
 
 ## 二、常见问题

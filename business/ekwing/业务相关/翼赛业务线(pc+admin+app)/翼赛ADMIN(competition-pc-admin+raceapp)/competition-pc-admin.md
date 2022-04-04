@@ -6,4 +6,4 @@
 
 - 开发模式：前后端分离
 - 主要技术：Vue2+Js+Scss
-- 仓库地址：`https://gitlab.ekwing.com/gz-server/competition-pc-admin`
+- 仓库地址：

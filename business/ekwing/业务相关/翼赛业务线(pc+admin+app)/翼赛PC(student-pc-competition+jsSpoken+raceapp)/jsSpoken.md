@@ -5,4 +5,4 @@
 
 ## 项目情况
 
-- 地址：`https://gitlab.ekwing.com/gz-server/jsSpoken`
+- 地址：

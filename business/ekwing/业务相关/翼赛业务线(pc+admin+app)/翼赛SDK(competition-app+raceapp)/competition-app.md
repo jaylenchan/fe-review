@@ -9,7 +9,7 @@
 
 - 业务技术：**Vue2+JS+JSBridge+Scss**
 
-- 项目地址：`https://gitlab.ekwing.com/gz-server/competition-app`
+- 项目地址：
 
 - CI配置：`Jenkinsfile`
 

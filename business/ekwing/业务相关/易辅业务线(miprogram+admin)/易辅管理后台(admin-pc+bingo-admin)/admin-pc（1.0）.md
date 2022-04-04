@@ -7,7 +7,7 @@ admin-pc是一个包含了校管和超管两个子系统的后台管理系统项
 
 - 开发模式：**前后端分离**
 - 业务技术：**Vue2+Scss+Js**
-- 仓库地址：`https://gitlab.ekwing.com/wisdom/fe/admin-pc`
+- 仓库地址：
 
 ## 二、常见问题
 

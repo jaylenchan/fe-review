@@ -9,7 +9,7 @@
 
 - 业务技术：**Avalon+JS+JSBridge+Css**
 
-- 项目地址：`https://gitlab.ekwing.com/tec/raceapp`
+- 项目地址：
 
 - 磁盘路径：
 
