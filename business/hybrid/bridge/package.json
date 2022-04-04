@@ -1,5 +1,5 @@
 {
-  "name": "@ekwing/jsbridge",
+  "name": "jsbridge",
   "amdName": "jsbridge",
   "version": "1.4.13",
   "description": "app jsbridge",
@@ -7,8 +7,6 @@
   "module": "dist/jsbridge.es.js",
   "jsnext:main": "dist/jsbridge.es.js",
   "umd:main": "dist/jsbridge.umd.js",
-  "repository": "http://gitlab.ekwing.com/ed/jsbridge.git",
-  "author": "liangjiahui <liangjiahui@moyi365.com>",
   "license": "GPL v3",
   "scripts": {
     "build": "rimraf dist && microbundle --external all && yarn build:doc",
