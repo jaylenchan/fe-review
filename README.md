@@ -23,7 +23,7 @@
 
 ### [Vue-Core]()
 
-- [x] [手写vue3核心源码][手写vue3核心源码]
+- [x] [手写vue3核心源码](https://github.com/jaylenchan/vue3)
 
 ### [Vue-Router](https://github.com/jaylenchan/fe-review/tree/main/vue/vue-router)
 
