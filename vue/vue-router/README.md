@@ -1,5 +1,13 @@
 # Vue-Router
 
+```js
+  new Vue({
+    router
+  })
+```
+
+将router放入根的本意是想让所有子组件都能拿到router。
+
 场景1: 不同ID的用户都需要用同一个用户组件渲染
 解决方式：使用动态路径参数实现这个效果 - `{ path: '/user/:id ', component: User}`
 其中，`:id`是一个变量。也就是当`/user/1`,`/user/2`都会匹配到`User`组件。
