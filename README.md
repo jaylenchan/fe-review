@@ -11,7 +11,7 @@
 
 ## [Typescript生态](https://github.com/jaylenchan/fe-review/tree/main/typescript)
 
-- [x] [手写防抖与节流](https://github.com/jaylenchan/fe-review/tree/main/typescript/debounce)
+- [x] [手写防抖与节流](https://github.com/jaylenchan/fe-review/tree/main/typescript/debounce-throttle)
 - [x] [手写深拷贝](https://github.com/jaylenchan/fe-review/tree/main/typescript/deep-clone)
 - [x] [手写模拟instanceof](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-instanceof)
 - [x] [手写模拟new](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-new)
@@ -31,7 +31,7 @@
 
 ### [Vuex]()
 
-## [浏览器网络](https://github.com/jaylenchan/fe-review/tree/main/network)
+## [浏览器生态](https://github.com/jaylenchan/fe-review/tree/main/network)
 
 ### [安全](https://github.com/jaylenchan/fe-review/tree/main/network/web-security)
 
@@ -63,6 +63,7 @@
 - [x] [实现Tapable的SyncHook](https://github.com/jaylenchan/fe-review/tree/main/engineering/webpack/tapable)
 
 ### [docker](https://github.com/jaylenchan/fe-review/tree/main/engineering/docker)
+
 - [ ] [实现dev-container](https://github.com/jaylenchan/fe-review/tree/main/engineering/docker/.devcontainer)
 
 ## [业务技术](https://github.com/jaylenchan/fe-review/tree/main/business)
