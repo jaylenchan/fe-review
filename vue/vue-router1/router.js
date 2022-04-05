@@ -112,4 +112,8 @@ export default class VueRouter {
   match(location) {
     return this.matcher.match(location)
   }
+
+  push(location) {
+    this.history.transitionTo(location)
+  }
 }
