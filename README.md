@@ -17,6 +17,7 @@
 - [x] [手写模拟new](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-new)
 - [x] [手写模拟call](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-call)
 - [x] [手写模拟apply](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-apply)
+- [ ] [手写模拟bind]
 - [ ] [手写Promise](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-promise)
 
 ## [Vue生态](https://github.com/jaylenchan/fe-review/tree/main/vue)
