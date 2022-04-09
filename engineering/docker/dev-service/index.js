@@ -5,7 +5,7 @@ const fs = require('fs')
 
 class DevService {
   static Registry = '127.0.0.1:9000'
-
+  static ProjectName = 'bingo-admin'
   async run() {
     /** 1.获取docker-compose配置中的所有服务 */
     const services = await this.getServices()
@@ -20,6 +20,8 @@ class DevService {
     await this.pullImages(shouldPullImages)
     /** 5. 使用docker-compose构建应该构建的镜像 */
     await this.buildImages(shouldBuildImages)
+    /** 6. 启动docker-compose指定的所有服务 */
+    await this.startServices()
   }
 
   /** 获取docker-compose配置 */
@@ -27,7 +29,10 @@ class DevService {
     return new Promise((resolve, reject) => {
       try {
         const dockerComposeConfig = yaml.load(
-          fs.readFileSync(path.resolve(__dirname, '../.devcontainer/docker-compose.yml'), 'utf8')
+          fs.readFileSync(
+            path.resolve(__dirname, '../.devcontainer/docker-compose.yml'),
+            'utf8'
+          )
         )
         resolve(dockerComposeConfig)
       } catch (err) {
@@ -59,11 +64,13 @@ class DevService {
       return serviceImages
     }, [])
     const localImages = await this.getLocalImages()
-    const lackImages = serviceImages.filter((serviceImage) => !localImages.includes(serviceImage))
+    const lackImages = serviceImages.filter(
+      (serviceImage) => !localImages.includes(serviceImage)
+    )
     return lackImages
   }
 
-  /** 在本地不存在的镜像基础上，继续寻找harbor仓库中不存在的镜像 */
+  /** 在本地不存在的镜像基础上，继续寻找registry仓库中不存在的镜像 */
   async findLackRepositoryImages(images) {
     const shouldPullImages = []
     const shouldBuildImages = []
@@ -75,13 +82,18 @@ class DevService {
       try {
         await execa('curl', [`${DevService.Registry}/v2/${imageName}/tags/list`]).then(
           ({ stdout }) => {
-            console.log(stdout)
             const info = JSON.parse(stdout)
             if (info.errors && info.errors.length > 0) {
               shouldBuildImages.push(image)
             } else {
               const { tags } = info
-              tags.includes(imageTag) ? shouldPullImages.push(image) : shouldBuildImages.push(image)
+              /** 查看下registry是否存在当前版本
+               *  - 不存在，放入构建数组
+               *  - 存在，放入拉取数组
+               */
+              tags.includes(imageTag)
+                ? shouldPullImages.push(image)
+                : shouldBuildImages.push(image)
             }
           }
         )
@@ -107,7 +119,13 @@ class DevService {
       )
       return pullRequests
     }, [])
-    return Promise.all(pullRequests)
+    await Promise.all(pullRequests)
+    const tagRequests = images.reduce((tagRequests, curImage) => {
+      const privateImage = `${DevService.Registry}/${curImage}`
+      tagRequests.push(execa('docker', ['tag', privateImage, curImage]))
+      return tagRequests
+    }, [])
+    await Promise.all(tagRequests)
   }
 
   /** 构建需要构建的镜像 */
@@ -157,6 +175,23 @@ class DevService {
       return pushRequests
     }, [])
     await Promise.all(pushRequests)
+    const tagRequests = images.reduce((tagRequests, curImage) => {
+      console.log('curImage', curImage)
+      const privateImage = `${DevService.Registry}/${curImage}`
+      tagRequests.push(execa('docker', ['tag', privateImage, curImage]))
+      return tagRequests
+    }, [])
+    await Promise.all(tagRequests)
+  }
+
+  /** 运行所有服务 */
+  async startServices() {
+    await execa('docker-compose', [
+      '-f',
+      path.resolve(__dirname, '../.devcontainer/docker-compose.yml'),
+      'up',
+      '-d'
+    ])
   }
 }
 

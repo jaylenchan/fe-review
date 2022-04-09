@@ -33,6 +33,6 @@
     "skipLibCheck": true, /* Skip type checking all .d.ts files. */
   },
   "exclude": [
-    "./file-upload/server/"
+    "admin/file-upload/server"
   ]
 }
