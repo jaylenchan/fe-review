@@ -70,7 +70,11 @@
 
 ## [业务技术](https://github.com/jaylenchan/fe-review/tree/main/business)
 
-- [x] [手写大文件上传](https://github.com/jaylenchan/fe-review/tree/main/business/file-upload)
+- [ ] [实现大文件上传](https://github.com/jaylenchan/fe-review/tree/main/business/file-upload)
+  - [x] [分片上传]() 
+  - [ ] [上传进度条]()
+  - [ ] [断点续传]()
+  - [ ] [文件秒传]()
 - [x] [手写jsBridge](https://github.com/jaylenchan/fe-review/tree/main/business/hybrid)
 - [x] [业务开发流程梳理](https://github.com/jaylenchan/fe-review/tree/main/business/ekwing)
 
