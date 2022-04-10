@@ -21,6 +21,17 @@
     wsClient.onmessage = function (event) {
       console.log(event.data)
     }
+
+    /** 当链接断开的时候触发close事件*/
+    wsClient.onclose = function () {
+      console.log("close:", wsClient.readyState)
+      console.log("已关闭websocket")
+    }
+
+    wsClient.onerror = function () {
+      console.log("close:", wsClient.readyState)
+      console.log("websocket连接错误")
+    }
   </script>
 </body>
 
