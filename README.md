@@ -45,7 +45,7 @@
 ### [跨域](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin)
 
 - [ ] [实现跨域方案 - JSONP](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin/jsonp)
-- [ ] [实现跨域方案 - PROXY][实现跨域方案 - PROXY]
+- [x] [实现跨域方案 - PROXY]()
 - [ ] [实现跨域方案 - CORS](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin/cors)
 
 ### [websocket](https://github.com/jaylenchan/fe-review/tree/main/network/web-websocket)
