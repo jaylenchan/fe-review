@@ -13,7 +13,7 @@
 
 - [x] [手写防抖与节流](https://github.com/jaylenchan/fe-review/tree/main/typescript/debounce-throttle)
 - [x] [手写深拷贝](https://github.com/jaylenchan/fe-review/tree/main/typescript/deep-clone)
-- [x] [手写实现curringAdd(1)(2)(3)]()
+- [x] [手写实现curringAdd(1)(2)(3)](https://github.com/jaylenchan/fe-review/tree/main/typescript/curring)
 - [x] [手写模拟instanceof](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-instanceof)
 - [x] [手写模拟new](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-new)
 - [x] [手写模拟call](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-call)
