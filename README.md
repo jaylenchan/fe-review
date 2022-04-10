@@ -45,7 +45,7 @@
 ### [跨域](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin)
 
 - [ ] [实现跨域方案 - JSONP](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin/jsonp)
-- [x] [实现跨域方案 - PROXY]()
+- [x] [实现跨域方案 - PROXY](https://github.com/jaylenchan/fe-review/tree/main/browser/cross-origin/proxy)
 - [ ] [实现跨域方案 - CORS](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin/cors)
 
 ### [websocket](https://github.com/jaylenchan/fe-review/tree/main/network/web-websocket)
@@ -66,7 +66,7 @@
 
 ### [docker](https://github.com/jaylenchan/fe-review/tree/main/engineering/docker)
 
-- [ ] [实现dev-container](https://github.com/jaylenchan/fe-review/tree/main/engineering/docker/.devcontainer)
+- [x] [实现dev-container](https://github.com/jaylenchan/fe-review/tree/main/engineering/docker/.devcontainer)
 
 ## [业务技术](https://github.com/jaylenchan/fe-review/tree/main/business)
 
