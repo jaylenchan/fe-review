@@ -4,7 +4,7 @@
  * 其实就是同步（就是同一个时刻拿到）多个异步请求的结果。
  */
 
-const MyPromise = Object.create(Promise)
+const MyPromise = Object.create(Promise.prototype)
 
 MyPromise.all = function (promises: any[]) {
   return new Promise((resolve, reject) => {
