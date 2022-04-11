@@ -36,6 +36,8 @@
   - [x] [Readonly](typescript/utility-types/Readonly.ts)
   - [x] [Required](typescript/utility-types/Required.ts)
   - [x] [Partial](typescript/utility-types/Partial.ts)
+  - [x] [NonNullable](typescript/utility-types/NonNullable.ts)
+  - [x] [ReturnType](typescript/utility-types/ReturnType.ts)
 
 ## [SCSS生态](scss)
 
