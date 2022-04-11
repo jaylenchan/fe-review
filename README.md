@@ -19,7 +19,11 @@
 - [x] [手写模拟call](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-call)
 - [x] [手写模拟apply](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-apply)
 - [x] [手写模拟bind](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-bind)
-- [ ] [手写Promise](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-promise)
+- [ ] [Promise相关题目]()
+  - [ ] [手写Promise]()
+  - [x] [手写Promise.all]()
+  - [ ] [手写Promise.race]()
+  - [ ] [实现控制请求并发数量]()
 
 ## [Vue生态](https://github.com/jaylenchan/fe-review/tree/main/vue)
 
@@ -71,7 +75,7 @@
 ## [业务技术](https://github.com/jaylenchan/fe-review/tree/main/business)
 
 - [ ] [实现大文件上传](https://github.com/jaylenchan/fe-review/tree/main/business/file-upload)
-  - [x] [分片上传]() 
+  - [x] [分片上传]()
   - [ ] [上传进度条]()
   - [ ] [断点续传]()
   - [ ] [文件秒传]()
