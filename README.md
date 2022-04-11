@@ -20,7 +20,7 @@
 - [x] [手写模拟apply](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-apply)
 - [x] [手写模拟bind](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-bind)
 - [ ] [Function]()
-  - [ ] [实现模板引擎]()
+  - [x] [实现模板引擎]()
 - [ ] [Promise]()
   - [x] [手写Promise]()
   - [x] [手写Promise.all]()
