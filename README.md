@@ -18,7 +18,7 @@
   - [x] [手写Promise](typescript/promise/impl-promise)
   - [x] [手写Promise.all](typescript/promise/impl-promise-all)
   - [x] [手写Promise.race](typescript/promise/impl-promise-race)
-  - [ ] [实现控制请求并发数量]()
+  - [x] [实现控制请求并发数量](typescript/promise/impl-parallel)
 
 - ### [Others](typescript/others)
 
