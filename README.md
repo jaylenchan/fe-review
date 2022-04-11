@@ -1,124 +1,132 @@
 <div align="center">
+<h1 align="center"> FE-Review</h1>
 <img  src="business/ekwing/pic/Web开发流程图.png"/>
-<h1 align="center"> FE-Review 前端复习</h1>
 </div>
 
 ## [Typescript生态](typescript)
 
-- ### [Function](function)
+- ### [Function](typescript/function)
 
   - [x] [实现模板引擎](typescript/function/template-engine)
-  - [x] [手写模拟call](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-call)
-  - [x] [手写模拟apply](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-apply)
-  - [x] [手写模拟bind](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-bind)
-  - [x] [手写实现curringAdd(1)(2)(3)](https://github.com/jaylenchan/fe-review/tree/main/typescript/curring)
+  - [x] [手写模拟call](typescript/function/impl-call)
+  - [x] [手写模拟apply](typescript/function/impl-apply)
+  - [x] [手写模拟bind](typescript/function/impl-bind)
+  - [x] [手写实现curringAdd(1)(2)(3)](typescript/function/curring)
 
-- ### [Promise]()
+- ### [Promise](typescript/promise)
 
-  - [x] [手写Promise]()
-  - [x] [手写Promise.all]()
-  - [x] [手写Promise.race]()
+  - [x] [手写Promise](typescript/promise/impl-promise)
+  - [x] [手写Promise.all](typescript/promise/impl-promise-all)
+  - [x] [手写Promise.race](typescript/promise/impl-promise-race)
   - [ ] [实现控制请求并发数量]()
 
-- ### [Others]()
+- ### [Others](typescript/others)
 
-  - [x] [手写防抖与节流](https://github.com/jaylenchan/fe-review/tree/main/typescript/debounce-throttle)
-  - [x] [手写深拷贝](https://github.com/jaylenchan/fe-review/tree/main/typescript/deep-clone)
-  - [x] [手写模拟instanceof](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-instanceof)
-  - [x] [手写模拟new](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-new)
+  - [x] [手写防抖与节流](typescript/others/debounce-throttle)
+  - [x] [手写深拷贝](typescript/others/deep-clone)
+  - [x] [手写模拟instanceof](typescript/others/impl-instanceof)
+  - [x] [手写模拟new](typescript/others/impl-new)
 
-## [SCSS生态](https://github.com/jaylenchan/fe-review/tree/main/scss)
+## [SCSS生态](scss)
 
-- [ ] [总结垂直居中方案][总结垂直居中方案]
-- [ ] [总结flex布局](https://github.com/jaylenchan/fe-review/tree/main/scss/flex)
-- [ ] [总结层叠上下文(stacking-context)](https://github.com/jaylenchan/fe-review/tree/main/scss/stacking-context)
+- [ ] [总结垂直居中方案]()
+- [ ] [总结flex布局](scss/flex)
+- [ ] [总结层叠上下文(stacking-context)](scss/stacking-context)
 
-## [Vue生态](https://github.com/jaylenchan/fe-review/tree/main/vue)
+## [Vue生态](vue)
 
-### [Vue-Core]()
+- ### [Vue-Core]()
 
-- [x] [手写vue3核心源码](https://github.com/jaylenchan/vue3)
+  - [x] [手写vue3核心源码]()
 
-### [Vue-Router](https://github.com/jaylenchan/fe-review/tree/main/vue/vue-router)
+- ### [Vue-Router](vue/vue-router)
 
-- [x] [手写vue-router源码](https://github.com/jaylenchan/fe-review/tree/main/vue/vue-router)
+  - [x] [手写vue-router源码](vue/vue-router)
 
-### [Vuex]()
+- ### [Vuex]()
 
-## [浏览器生态](https://github.com/jaylenchan/fe-review/tree/main/network)
+## [浏览器生态](browser)
 
-- ### [安全](https://github.com/jaylenchan/fe-review/tree/main/network/web-security)
+- ### [安全](browser/security)
 
-  - [x] [实现三种xss攻击+总结xss防御策略](https://github.com/jaylenchan/fe-review/tree/main/network/web-security/xss)
-  - [x] [实现csrf攻击+总结csrf防御策略](https://github.com/jaylenchan/fe-review/tree/main/network/web-security/xsrf)
+  - [x] [实现三种xss攻击+总结xss防御策略]()
+  - [x] [实现csrf攻击+总结csrf防御策略]()
 
-- ### [缓存](https://github.com/jaylenchan/fe-review/tree/main/network/web-cache)
+- ### [跨域](browser/cross-origin)
 
-- ### [跨域](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin)
+  - [ ] [实现跨域方案 - JSONP](browser/cross-origin/jsonp)
+  - [x] [实现跨域方案 - PROXY](browser/cross-origin/proxy)
+  - [ ] [实现跨域方案 - CORS](browser/cross-origin/cors)
 
-  - [ ] [实现跨域方案 - JSONP](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin/jsonp)
-  - [x] [实现跨域方案 - PROXY](https://github.com/jaylenchan/fe-review/tree/main/browser/cross-origin/proxy)
-  - [ ] [实现跨域方案 - CORS](https://github.com/jaylenchan/fe-review/tree/main/network/web-cross-origin/cors)
+- ### [http](browser/http)
 
-### [websocket](https://github.com/jaylenchan/fe-review/tree/main/network/web-websocket)
+  - [ ] [缓存](browser/http/web-cache)
 
-## [设计模式](https://github.com/jaylenchan/fe-review/tree/main/design-pattern)
+- ### [websocket](browser/websocket)
 
-- [x] [实现单例模式](https://github.com/jaylenchan/fe-review/tree/main/design-pattern/singleton-pattern)
-- [x] [实现策略模式](https://github.com/jaylenchan/fe-review/tree/main/design-pattern/strategy-pattern)
-- [x] [实现命令模式](https://github.com/jaylenchan/fe-review/tree/main/design-pattern/command-pattern)
-- [ ]  [实现发布订阅模式]()
+## [设计模式](design-pattern)
 
-## [工程化生态](https://github.com/jaylenchan/fe-review/tree/main/engineering)
+- [x] [实现单例模式](design-pattern/singleton-pattern)
+- [x] [实现策略模式](design-pattern/strategy-pattern)
+- [x] [实现命令模式](design-pattern/command-pattern)
+- [ ] [实现发布订阅模式]()
 
-- ### [webpack](https://github.com/jaylenchan/fe-review/tree/main/engineering/webpack)
+## [工程化技术](engineering)
 
-  - [x] [实现plugin](https://github.com/jaylenchan/fe-review/tree/main/engineering/webpack/plugin)
-  - [x] [实现Tapable的SyncHook](https://github.com/jaylenchan/fe-review/tree/main/engineering/webpack/tapable)
+- ### [webpack](engineering/webpack)
 
-- ### [docker](https://github.com/jaylenchan/fe-review/tree/main/engineering/docker)
+  - [x] [实现plugin](engineering/webpack/plugin)
+  - [x] [实现Tapable的SyncHook](engineering/webpack/tapable)
 
-  - [x] [实现dev-container](https://github.com/jaylenchan/fe-review/tree/main/engineering/docker/.devcontainer)
+- ### [docker](engineering/docker)
 
-## [业务技术](https://github.com/jaylenchan/fe-review/tree/main/business)
+  - [x] [实现dev-container](engineering/docker/devcontainer-project)
 
-- ### [实现大文件上传](https://github.com/jaylenchan/fe-review/tree/main/business/file-upload)
+## [业务技术](business)
+
+- ### [实现大文件上传](business/file-upload)
 
   - [x] [分片上传]()
   - [ ] [上传进度条]()
   - [ ] [断点续传]()
   - [ ] [文件秒传]()
-- [x] [手写jsBridge](https://github.com/jaylenchan/fe-review/tree/main/business/hybrid)
-- [x] [业务开发流程梳理](https://github.com/jaylenchan/fe-review/tree/main/business/ekwing)
+- [x] [手写jsBridge](business/hybrid)
 
-## [Leecode](https://github.com/jaylenchan/fe-review/tree/main/leetcode)
+- ### [业务项目](business/ekwing)
 
-- ### [双指针题目](https://github.com/jaylenchan/fe-review/tree/main/leetcode/two-pointers)
+  - [ ] [bingo-pc](business/ekwing/业务相关/易辅业务线(miprogram+admin)/易辅校园客户端（teacher-pc-wisdom）)
+  - [ ] [bingo-admin](business/ekwing/业务相关/易辅业务线(miprogram+admin)/易辅管理后台(admin-pc+bingo-admin))
+  - [ ] [efpad-mp](business/ekwing/业务相关/易辅业务线(miprogram+admin)/易辅家长小程序(efpad-mp))
+  - [ ] [esmatch-sdk](business/ekwing/业务相关/翼赛业务线(pc+admin+app)/翼赛SDK(competition-app+raceapp))
 
-  - [x] [[9]回文数](https://github.com/jaylenchan/fe-review/blob/main/leetcode/two-pointers/%5B9%5D%E5%9B%9E%E6%96%87%E6%95%B0/index.js)
-  - [x] [[19]删除链表的倒数第_n_个结点](https://github.com/jaylenchan/fe-review/tree/main/leetcode/two-pointers/%5B19%5D%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%AC_n_%E4%B8%AA%E7%BB%93%E7%82%B9/index.js)
-  - [x] [[11]盛最多水的容器](https://github.com/jaylenchan/fe-review/tree/main/leetcode/two-pointers/%5B11%5D%E7%9B%9B%E6%9C%80%E5%A4%9A%E6%B0%B4%E7%9A%84%E5%AE%B9%E5%99%A8/index.js)
+## [Leecode](leetcode)
 
-- ### [字符串题目](https://github.com/jaylenchan/fe-review/tree/main/leetcode/string/%5B14%5D%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80)
+- ### [双指针题目](leetcode/two-pointers)
 
-  - [x] [[14]最长公共前缀](https://github.com/jaylenchan/fe-review/blob/main/leetcode/string/%5B14%5D%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%89%8D%E7%BC%80/index.js)
+  - [x] [[9]回文数](leetcode/two-pointers/[9]回文数)
+  - [x] [[19]删除链表的倒数第_n_个结点](leetcode/two-pointers/[19]删除链表的倒数第_n_个结点)
+  - [x] [[11]盛最多水的容器](leetcode/two-pointers/[11]盛最多水的容器)
 
-- ### [栈题目](https://github.com/jaylenchan/fe-review/tree/main/leetcode/stack)
+- ### [字符串题目](leetcode/string)
 
-  - [x] [[7]整数反转](https://github.com/jaylenchan/fe-review/blob/main/leetcode/stack/%5B7%5D%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC/index.js)
-  - [x] [[20]有效的括号](https://github.com/jaylenchan/fe-review/blob/main/leetcode/stack/%5B20%5D%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7/index.js)
+  - [x] [[14]最长公共前缀](leetcode/string/[14]最长公共前缀)
 
-- ### [链表题目](https://github.com/jaylenchan/fe-review/tree/main/leetcode/linked-list)
+- ### [栈题目](leetcode/stack)
 
-  - [x] [[2]两数相加](https://github.com/jaylenchan/fe-review/blob/main/leetcode/linked-list/%5B2%5D%E4%B8%A4%E6%95%B0%E7%9B%B8%E5%8A%A0/index.js)
-  - [x] [[21]合并两个有序链表](https://github.com/jaylenchan/fe-review/blob/main/leetcode/linked-list/%5B21%5D%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8/index.js)
-  - [x] [[206]反转链表](https://github.com/jaylenchan/fe-review/blob/main/leetcode/linked-list/%5B206%5D%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/index.js)
+  - [x] [[7]整数反转](leetcode/stack/[7]整数反转)
+  - [x] [[20]有效的括号](leetcode/stack/[20]有效的括号)
 
-- ### [滑动窗口题目](https://github.com/jaylenchan/fe-review/tree/main/leetcode/sliding-window/%5B3%5D%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2)
+- ### [链表题目](leetcode/linked-list)
 
-  - [x] [[3]无重复字符的最长子串](https://github.com/jaylenchan/fe-review/blob/main/leetcode/sliding-window/%5B3%5D%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/index.js)
+  - [x] [[2]两数相加](leetcode/linked-list/[2]两数相加)
+  - [x] [[21]合并两个有序链表](leetcode/linked-list/[21]合并两个有序链表)
+  - [x] [[206]反转链表](leetcode/linked-list/[206]反转链表)
 
-- ### [动态规划题目](https://github.com/jaylenchan/fe-review/tree/main/leetcode/dynamic-programming)
+- ### [滑动窗口题目](leetcode/sliding-window)
 
-  - [x] [[53]最大子数组和](https://github.com/jaylenchan/fe-review/blob/main/leetcode/dynamic-programming/%5B53%5D%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C/index.js)
-  - [x] [[70]爬楼梯](https://github.com/jaylenchan/fe-review/blob/main/leetcode/dynamic-programming/%5B70%5D%E7%88%AC%E6%A5%BC%E6%A2%AF/index.js)
+  - [x] [[3]无重复字符的最长子串](leetcode/sliding-window/[3]无重复字符的最长子串)
+
+- ### [动态规划题目](leetcode/dynamic-programming)
+
+  - [x] [[53]最大子数组和](leetcode/dynamic-programming/[53]最大子数组和)
+  - [x] [[70]爬楼梯](leetcode/dynamic-programming/[70]爬楼梯)
