@@ -3,29 +3,33 @@
 <h1 align="center"> FE-Review 前端复习</h1>
 </div>
 
+## [Typescript生态](https://github.com/jaylenchan/fe-review/tree/main/typescript)
+- ### [Function]()
+
+  - [x] [实现模板引擎]()
+  - [x] [手写模拟call](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-call)
+  - [x] [手写模拟apply](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-apply)
+  - [x] [手写模拟bind](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-bind)
+  - [x] [手写实现curringAdd(1)(2)(3)](https://github.com/jaylenchan/fe-review/tree/main/typescript/curring)
+
+- ### [Promise]()
+
+  - [x] [手写Promise]()
+  - [x] [手写Promise.all]()
+  - [x] [手写Promise.race]()
+  - [ ] [实现控制请求并发数量]()
+
+- ### [Others]()
+  - [x] [手写防抖与节流](https://github.com/jaylenchan/fe-review/tree/main/typescript/debounce-throttle)
+  - [x] [手写深拷贝](https://github.com/jaylenchan/fe-review/tree/main/typescript/deep-clone)
+  - [x] [手写模拟instanceof](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-instanceof)
+  - [x] [手写模拟new](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-new)
+
 ## [SCSS生态](https://github.com/jaylenchan/fe-review/tree/main/scss)
 
 - [ ] [总结垂直居中方案][总结垂直居中方案]
 - [ ] [总结flex布局](https://github.com/jaylenchan/fe-review/tree/main/scss/flex)
 - [ ] [总结层叠上下文(stacking-context)](https://github.com/jaylenchan/fe-review/tree/main/scss/stacking-context)
-
-## [Typescript生态](https://github.com/jaylenchan/fe-review/tree/main/typescript)
-
-- [x] [手写防抖与节流](https://github.com/jaylenchan/fe-review/tree/main/typescript/debounce-throttle)
-- [x] [手写深拷贝](https://github.com/jaylenchan/fe-review/tree/main/typescript/deep-clone)
-- [x] [手写实现curringAdd(1)(2)(3)](https://github.com/jaylenchan/fe-review/tree/main/typescript/curring)
-- [x] [手写模拟instanceof](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-instanceof)
-- [x] [手写模拟new](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-new)
-- [x] [手写模拟call](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-call)
-- [x] [手写模拟apply](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-apply)
-- [x] [手写模拟bind](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-bind)
-- [ ] [Function]()
-  - [x] [实现模板引擎]()
-- [ ] [Promise]()
-  - [x] [手写Promise]()
-  - [x] [手写Promise.all]()
-  - [x] [手写Promise.race]()
-  - [ ] [实现控制请求并发数量]()
 
 ## [Vue生态](https://github.com/jaylenchan/fe-review/tree/main/vue)
 
