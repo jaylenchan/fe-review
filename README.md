@@ -27,6 +27,16 @@
   - [x] [手写模拟instanceof](typescript/others/impl-instanceof)
   - [x] [手写模拟new](typescript/others/impl-new)
 
+- ### [utility-types](typescript/utility-types)
+
+  - [x] [Omit](typescript/utility-types/Omit.ts)
+  - [x] [Exclude](typescript/utility-types/Exclude.ts)
+  - [x] [Extract](typescript/utility-types/Extract.ts)
+  - [x] [Pick](typescript/utility-types/Pick.ts)
+  - [x] [Readonly](typescript/utility-types/Readonly.ts)
+  - [x] [Required](typescript/utility-types/Required.ts)
+  - [x] [Partial](typescript/utility-types/Partial.ts)
+
 ## [SCSS生态](scss)
 
 - [ ] [总结垂直居中方案]()
