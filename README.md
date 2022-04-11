@@ -3,11 +3,11 @@
 <h1 align="center"> FE-Review 前端复习</h1>
 </div>
 
-## [Typescript生态](https://github.com/jaylenchan/fe-review/tree/main/typescript)
+## [Typescript生态](typescript)
 
-- ### [Function]()
+- ### [Function](function)
 
-  - [x] [实现模板引擎]()
+  - [x] [实现模板引擎](typescript/function/template-engine)
   - [x] [手写模拟call](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-call)
   - [x] [手写模拟apply](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-apply)
   - [x] [手写模拟bind](https://github.com/jaylenchan/fe-review/tree/main/typescript/mock-bind)
