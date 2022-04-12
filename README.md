@@ -76,7 +76,11 @@
 
 - ### [http](browser/http)
 
-  - [ ] [缓存](browser/http/web-cache)
+  - [缓存](browser/http/web-cache)
+    - [x] [max-age强制缓存]()
+    - [x] [no-cache缓存但发请求]()
+    - [x] [no-cache+last-modfied协商缓存](browser/http/cache/no-cache+last-modfied.js)
+    - [x] [no-cache+etag协商缓存](browser/http/cache/no-cache+etag.js)
 
 - ### [websocket](browser/websocket)
 
