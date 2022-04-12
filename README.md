@@ -20,6 +20,10 @@
   - [x] [手写Promise.race](typescript/promise/impl-promise-race)
   - [x] [实现控制请求并发数量](typescript/promise/impl-parallel)
 
+- ### [RegExp](typescript/regex)
+  
+  - [x] [解析url](typescript/regex/parse-url)
+
 - ### [Others](typescript/others)
 
   - [x] [手写防抖与节流](typescript/others/debounce-throttle)
