@@ -101,12 +101,16 @@
 - ### [webpack](engineering/webpack)
 
   - [x] [实现plugin](engineering/webpack/plugin)
-  - [x] [实现Tapable的SyncHook](engineering/webpack/tapable)
-
+  - [ ] [实现Tapable-Hooks](engineering/webpack/impl-tapable-hooks)
+    - [x] [实现SyncHook](engineering/webpack/impl-tapable-hooks/sync-hook)
+    - [x] [实现SyncBailHook](engineering/webpack/impl-tapable-hooks/sync-bail-hook)
+    - [x] [实现SyncWaterfallHook](engineering/webpack/impl-tapable-hooks/sync-waterfalll-hook)
+    - [ ] [实现SyncLoopHook]()
+    - [x] [实现AsyncParalleHook](engineering/webpack/impl-tapable-hooks/async-paralle-hook)
+    - [x] [实现AsyncSeriesHook](engineering/webpack/impl-tapable-hooks/async-paralle-hook)
 - ### [docker](engineering/docker)
 
   - [x] [实现dev-container](engineering/docker/devcontainer-project)
-
 ## [业务技术](business)
 
 - ### [实现大文件上传](business/file-upload)
