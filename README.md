@@ -54,7 +54,7 @@
 - ### [Vue-Core]()
 
   - [x] [手写vue3核心源码]()
-  - [ ] [实现简易版MVVM]()
+  - [x] [实现简易版MVVM](vue/impl-mvvm)
 
 - ### [Vue-Router](vue/vue-router)
 
