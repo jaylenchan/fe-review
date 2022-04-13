@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextTick</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <div id="app">
+    <ul ref="next">
+      <li v-for="(item, index) in items" :key="index">{{item}}</li>
+    </ul>
+    <button @click="add">添加</button>
+  </div>
+
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        items: ['苹果🍎', '香蕉🍌', '西瓜🍉']
+      },
+      methods: {
+        add() {
+          this.items.push('芒果🥭')
+          // 获取子元素
+          /**
+           * 输出发现，length是3，但是界面已经变成4个了
+           * 原因：vue是异步更新的
+           * 业务：业务场景很多情况，需要在更新dom之后，立马对相关数据做事情
+           * 解决：使用this.$nextTick()包裹住逻辑：
+           * const children = this.$refs.next
+           * const length = children.childNodes.length
+           */
+          this.$nextTick(() => {
+            const children = this.$refs.next
+            const length = children.childNodes.length
+            console.log(length)
+          })
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

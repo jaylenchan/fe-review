@@ -8470,6 +8470,11 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
+snabbdom@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/snabbdom/-/snabbdom-2.1.0.tgz#cef6d44f1170574582bffdce128cfbb46d2b5f6b"
+  integrity sha512-3GPeO80A2/bob5ADrkRX8FtvW8kHbJ0aRb4XAN2MIN4bY2dprNJkhp87AgfjWgVhIkwgX9DOsuTLjWwBhMXMkQ==
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"

@@ -18,6 +18,7 @@
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "scss-loader": "^0.0.1",
+    "snabbdom": "^2.1.0",
     "style-loader": "^3.3.1",
     "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.6.14",
