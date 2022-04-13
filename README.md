@@ -24,6 +24,10 @@
   
   - [x] [解析url](typescript/regex/parse-url)
 
+- ### [OOP](typescript/oop)
+  
+  - [x] [ES6继承](typescript/oop/inherit)
+
 - ### [Others](typescript/others)
 
   - [x] [手写防抖与节流](typescript/others/debounce-throttle)
