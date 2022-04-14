@@ -20,7 +20,7 @@
   - [x] [手写Promise.race](typescript/promise/impl-promise-race)
   - [x] [实现控制请求并发数量](typescript/promise/impl-parallel)
 
-- ### [RegExp](typescript/regex)
+- ### [正则表达式](typescript/regex)
   
   - [x] [解析url](typescript/regex/parse-url)
 
@@ -108,9 +108,11 @@
     - [ ] [实现SyncLoopHook]()
     - [x] [实现AsyncParalleHook](engineering/webpack/impl-tapable-hooks/async-paralle-hook)
     - [x] [实现AsyncSeriesHook](engineering/webpack/impl-tapable-hooks/async-paralle-hook)
+
 - ### [docker](engineering/docker)
 
   - [x] [实现dev-container](engineering/docker/devcontainer-project)
+
 ## [业务技术](business)
 
 - ### [实现大文件上传](business/file-upload)

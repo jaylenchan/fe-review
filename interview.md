@@ -43,6 +43,23 @@
 3. 说下App文件上传的实现思路
    - 实现技术：Blob.prototype.slice() + axios实现
    - 包含功能点：分片上传、进度条、中断上传
+   - 实现思路：
+     - 分片上传：使用Blobl.prototype.slice()对文件进行切片，设置一个cur不断计算切片的位置，最终生成一个切片数组。 
+       - 上传优化：这里跟后端沟通，也为了前端的优化，选取了4片，4片的并发上传优化。实现 [并发控制优化](typescript/promise/impl-parallel)
+     - 进度条：利用axios的onUploadProgress事件，将每一片切片的loaded累加起来/文件的总大小。然后为了不断刷新总大小进度，需要在每一个切片当中实时计算progress的总上传总大小和文件总大小之间的比值
+     - 中断上传：
+      利用axios的cancelToken实现的。具体时利用createRequestList这个创建分片请求的函数直接添加一个cancelFns的属性，是一个数组。然后axios的cancelToken会有一个回调函数，函数接收一个fn，将这些fn放入createRequestList的cancelFns就OK了。
+      使用的时候，设置一个取消按钮，以此遍历cancelfns中的fn取消即可
+      ```js
+       {
+          cancelToken: new axios.CancelToken((cancelFn) => {
+          if (!(createRequestList as any).cancelFns) {
+            ;(createRequestList as any).cancelFns = []
+          }
+          ;(createRequestList as any).cancelFns.push(cancelFn)
+        })
+       }
+      ```
 
 ## bingo pc2.2校园版
 

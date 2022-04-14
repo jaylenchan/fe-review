@@ -1,11 +1,11 @@
+/**
+ 寄生组合式继承 = 原型继承+构造函数借用
+ instance -> SubType.prototype -> SuperType.prototype -> Object.prototype -> null
+ */
 function inheritPrototype(subType, superType) {
-  const prototype = Object.create(superType)
-  prototype.constructor = subType
   /** 完全重写subType.prototype */
-  subType.prototype = prototype
-  /**
-   * subInstance -> subType.prototype -> superType.prototype
-   */
+  subType.prototype = Object.create(superType)
+  subType.prototype.constructor = subType
 }
 
 function SuperType(name) {
