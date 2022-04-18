@@ -2,12 +2,12 @@
  * 千分符分割
  */
 
-var string = '123456789'
+// var string = '123456789'
 /**
  * 思路：每次找一个数字，要求这个数字后边的所有数字直到末尾，数字的个数必须是3的倍数。找到这样的数字后，就插入一个,
  * 思路2: 或者直接找一个'',这个''之后开始的数字匹配到末尾，数字的个数必须是3的倍数
  * 其实找数字和找位置都是一个套路，只不过位置是''看起来是虚的一样
  */
-var regex = /(\d)(?=(\d{3})+$)/g
-var result = string.replace(regex, '$1,')
-console.log(result)
+// var regex = /(\d)(?=(\d{3})+$)/g
+// var result = string.replace(regex, '$1,')
+// console.log(result)

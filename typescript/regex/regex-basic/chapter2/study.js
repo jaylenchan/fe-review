@@ -42,3 +42,11 @@
 // var result = 'hello'.replace(/(?<=l)/g, '#')
 // console.log(result)
 
+/**
+ * /?!^/ 把非开头的字符前边的位置（咋样咋样）
+ * /(?l)/g 在全局进行匹配，把l前边的位置（咋样咋样）
+ * /(?!l)/g 在全局进行匹配，把非l的字符前边的位置（咋样咋样）
+ */
+// var result = 'hello'.replace(/(?!l)/g, '#')
+// // #h#ell#o# 注意前后都有，是因为开头位置^和结尾位置#
+// console.log(result)
