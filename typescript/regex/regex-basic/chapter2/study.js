@@ -50,3 +50,18 @@
 // var result = 'hello'.replace(/(?!l)/g, '#')
 // // #h#ell#o# 注意前后都有，是因为开头位置^和结尾位置#
 // console.log(result)
+
+/**
+ * abc后边跟着一个位置，这个位置后头是123
+ */
+var reg = /abc(?=123)/
+console.log(reg.test('abc123'))
+console.log(reg.exec('abc123')) // 结果 abc
+
+/**
+ * (?=abc)匹配一个位置，这个位置后边匹配到的数字要是abc
+ * (?=abc)\w\w\w123从某个位置开始匹配三个单词加上123，但是三个单词又因为这个位置的特殊性，被限制了单词成立的条件，就是这三个单词必须是abc
+ */
+var reg = /(?=abc)\w\w\w123/
+console.log(reg.exec('abc123')) // 结果 abc123
+console.log(reg.exec('dbc123')) // 结果 null
