@@ -33,3 +33,18 @@
  */
 // var reg = /(?<=a)b/
 // console.log(reg.exec('ab')) // 结果 b
+// www.baidu.com?age=10&name=jaylen#1.html
+/**
+ * 获取url查询参数的对应value
+ */
+function getQueryParam(url, key) {
+  if (key.includes('?')) key = `\\${key}`
+  const regex = new RegExp(`(?=[^&?])\\b${key}`, 'g')
+  const foundKey = regex.exec(url)
+  let value = ''
+  if (foundKey) {
+    value = new RegExp(`(?<=${foundKey}=)\\w+`).exec(url)
+  }
+  return value ? value[0] : null
+}
+console.log(getQueryParam('www.baidu.com?kkey=jaylen&age=10&class=ff/#1.html', 'age'))
