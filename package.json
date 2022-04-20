@@ -13,7 +13,8 @@
     "browser",
     "test",
     "business",
-    "leetcode"
+    "leetcode",
+    "jianzhi-offer"
   ],
   "devDependencies": {
     "@babel/core": "^7.17.5",
