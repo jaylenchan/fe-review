@@ -14,7 +14,8 @@
     "test",
     "business",
     "leetcode",
-    "jianzhi-offer"
+    "jianzhi-offer",
+    "optimization"
   ],
   "devDependencies": {
     "@babel/core": "^7.17.5",
