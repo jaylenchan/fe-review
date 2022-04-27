@@ -5,4 +5,4 @@
 ⚠️：判断几级域名，直接看有几个点，比如www.baidu.com就是有二级域名。比如：
 一级域名：.com
 二级域名：.baidu.com
-⚠️：www.baidu.com和baidu.com比较，肯定是baidu.com能够表示的范围更大。相当于baidu.com只是找到城市而已。ww.baidu.com找到了具体的区域。而一个城市是有很多区域的，因此肯定是baidu.com这个域名大
+⚠️：www.baidu.com和baidu.com比较，肯定是baidu.com能够表示的范围更大。相当于baidu.com只是找到城市而已。ww.baidu.com找到了具体的区域。而一个城市是有很多区域的，因此肯定是baidu.com这个域名
