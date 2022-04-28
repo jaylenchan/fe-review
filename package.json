@@ -13,8 +13,7 @@
     "browser",
     "test",
     "business",
-    "leetcode",
-    "jianzhi-offer",
+    "algorithms",
     "optimization"
   ],
   "devDependencies": {
