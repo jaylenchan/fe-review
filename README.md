@@ -130,7 +130,7 @@
   - [ ] [efpad-mp](business/ekwing/业务相关/易辅业务线(miprogram+admin)/易辅家长小程序(efpad-mp))
   - [ ] [esmatch-sdk](business/ekwing/业务相关/翼赛业务线(pc+admin+app)/翼赛SDK(competition-app+raceapp))
 
-## [Leecode](leetcode)
+## [算法与数据结构](leetcode)
 
 - ### [双指针题目](leetcode/two-pointers)
 
