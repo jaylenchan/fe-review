@@ -132,32 +132,38 @@
 
 ## [算法与数据结构](leetcode)
 
-- ### [双指针题目](leetcode/two-pointers)
+- ### [算法](algorithms/algorithms)
+
+- ### [数据结构](algorithms/data-structures)
+
+- ### [LeetCode](algorithms/leetcode)
+
+- #### [双指针题目](leetcode/two-pointers)
 
   - [x] [[9]回文数](leetcode/two-pointers/[9]回文数)
   - [x] [[19]删除链表的倒数第_n_个结点](leetcode/two-pointers/[19]删除链表的倒数第_n_个结点)
   - [x] [[11]盛最多水的容器](leetcode/two-pointers/[11]盛最多水的容器)
 
-- ### [字符串题目](leetcode/string)
+- #### [字符串题目](leetcode/string)
 
   - [x] [[14]最长公共前缀](leetcode/string/[14]最长公共前缀)
 
-- ### [栈题目](leetcode/stack)
+- #### [栈题目](leetcode/stack)
 
   - [x] [[7]整数反转](leetcode/stack/[7]整数反转)
   - [x] [[20]有效的括号](leetcode/stack/[20]有效的括号)
 
-- ### [链表题目](leetcode/linked-list)
+- #### [链表题目](leetcode/linked-list)
 
   - [x] [[2]两数相加](leetcode/linked-list/[2]两数相加)
   - [x] [[21]合并两个有序链表](leetcode/linked-list/[21]合并两个有序链表)
   - [x] [[206]反转链表](leetcode/linked-list/[206]反转链表)
 
-- ### [滑动窗口题目](leetcode/sliding-window)
+- #### [滑动窗口题目](leetcode/sliding-window)
 
   - [x] [[3]无重复字符的最长子串](leetcode/sliding-window/[3]无重复字符的最长子串)
 
-- ### [动态规划题目](leetcode/dynamic-programming)
+- #### [动态规划题目](leetcode/dynamic-programming)
 
   - [x] [[53]最大子数组和](leetcode/dynamic-programming/[53]最大子数组和)
   - [x] [[70]爬楼梯](leetcode/dynamic-programming/[70]爬楼梯)
