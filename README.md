@@ -167,3 +167,5 @@
 
   - [x] [[53]最大子数组和](leetcode/dynamic-programming/[53]最大子数组和)
   - [x] [[70]爬楼梯](leetcode/dynamic-programming/[70]爬楼梯)
+
+- ### [剑指offer](algorithms/jianzhi-offer)
