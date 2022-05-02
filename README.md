@@ -89,13 +89,6 @@
 
 - ### [websocket](browser/websocket)
 
-## [设计模式](design-pattern)
-
-- [x] [实现单例模式](design-pattern/singleton-pattern)
-- [x] [实现策略模式](design-pattern/strategy-pattern)
-- [x] [实现命令模式](design-pattern/command-pattern)
-- [ ] [实现发布订阅模式]()
-
 ## [工程化技术](engineering)
 
 - ### [webpack](engineering/webpack)
@@ -130,42 +123,59 @@
   - [ ] [efpad-mp](business/ekwing/业务相关/易辅业务线(miprogram+admin)/易辅家长小程序(efpad-mp))
   - [ ] [esmatch-sdk](business/ekwing/业务相关/翼赛业务线(pc+admin+app)/翼赛SDK(competition-app+raceapp))
 
+## [设计模式](design-pattern)
+
+- ### [结构型](design-pattern/structural)
+
+  - [x] [门面模式](design-pattern/structural/facade)
+
+- ### [创建型](design-pattern/creational)
+
+  - [x] [单例模式](design-pattern/creational/singleton)
+
+- ### [行为型](design-pattern/behavioral)
+
+  - [x] [策略模式](design-pattern/behavioral/strategy)
+  - [x] [命令模式](design-pattern/behavioral/command)
+
 ## [算法与数据结构](leetcode)
 
 - ### [算法](algorithms/algorithms)
+
+  - [x] [二分查找](algorithms/algorithms/binary-search)
 
 - ### [数据结构](algorithms/data-structures)
 
 - ### [LeetCode](algorithms/leetcode)
 
-- #### [双指针题目](leetcode/two-pointers)
+  - [双指针](leetcode/two-pointers)
 
-  - [x] [[9]回文数](leetcode/two-pointers/[9]回文数)
-  - [x] [[19]删除链表的倒数第_n_个结点](leetcode/two-pointers/[19]删除链表的倒数第_n_个结点)
-  - [x] [[11]盛最多水的容器](leetcode/two-pointers/[11]盛最多水的容器)
+    - [x] [[9]回文数](leetcode/two-pointers/[9]回文数)
+    - [x] [[19]删除链表的倒数第_n_个结点](leetcode/two-pointers/[19]删除链表的倒数第_n_个结点)
+    - [x] [[11]盛最多水的容器](leetcode/two-pointers/[11]盛最多水的容器)
 
-- #### [字符串题目](leetcode/string)
+  - [字符串](leetcode/string)
 
-  - [x] [[14]最长公共前缀](leetcode/string/[14]最长公共前缀)
+    - [x] [[14]最长公共前缀](leetcode/string/[14]最长公共前缀)
 
-- #### [栈题目](leetcode/stack)
+  - [栈](leetcode/stack)
 
-  - [x] [[7]整数反转](leetcode/stack/[7]整数反转)
-  - [x] [[20]有效的括号](leetcode/stack/[20]有效的括号)
+    - [x] [[7]整数反转](leetcode/stack/[7]整数反转)
+    - [x] [[20]有效的括号](leetcode/stack/[20]有效的括号)
 
-- #### [链表题目](leetcode/linked-list)
+  - [链表](leetcode/linked-list)
 
-  - [x] [[2]两数相加](leetcode/linked-list/[2]两数相加)
-  - [x] [[21]合并两个有序链表](leetcode/linked-list/[21]合并两个有序链表)
-  - [x] [[206]反转链表](leetcode/linked-list/[206]反转链表)
+    - [x] [[2]两数相加](leetcode/linked-list/[2]两数相加)
+    - [x] [[21]合并两个有序链表](leetcode/linked-list/[21]合并两个有序链表)
+    - [x] [[206]反转链表](leetcode/linked-list/[206]反转链表)
 
-- #### [滑动窗口题目](leetcode/sliding-window)
+  - [滑动窗口](leetcode/sliding-window)
 
-  - [x] [[3]无重复字符的最长子串](leetcode/sliding-window/[3]无重复字符的最长子串)
+    - [x] [[3]无重复字符的最长子串](leetcode/sliding-window/[3]无重复字符的最长子串)
 
-- #### [动态规划题目](leetcode/dynamic-programming)
+  - [动态规划](leetcode/dynamic-programming)
 
-  - [x] [[53]最大子数组和](leetcode/dynamic-programming/[53]最大子数组和)
-  - [x] [[70]爬楼梯](leetcode/dynamic-programming/[70]爬楼梯)
+    - [x] [[53]最大子数组和](leetcode/dynamic-programming/[53]最大子数组和)
+    - [x] [[70]爬楼梯](leetcode/dynamic-programming/[70]爬楼梯)
 
 - ### [剑指offer](algorithms/jianzhi-offer)
