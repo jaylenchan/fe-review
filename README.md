@@ -179,3 +179,5 @@
     - [x] [[70]爬楼梯](leetcode/dynamic-programming/[70]爬楼梯)
 
 - ### [剑指offer](algorithms/jianzhi-offer)
+  - [x] [[05] 替换空格]()
+  - [x] [[27] 二叉树的镜像]()
