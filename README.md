@@ -128,6 +128,7 @@
 - ### [结构型](design-pattern/structural)
 
   - [x] [门面模式](design-pattern/structural/facade)
+  - [x] [代理模式](design-pattern/structural/proxy)
 
 - ### [创建型](design-pattern/creational)
 
