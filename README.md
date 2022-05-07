@@ -10,6 +10,7 @@
   - [x] [门面模式](design-pattern/structural/facade)
   - [x] [代理模式](design-pattern/structural/proxy)
   - [x] [适配器模式](design-pattern/structural/adapter)
+  - [x] [享元模式](design-pattern/structural/fly-weight)
 
 - ### [创建型](design-pattern/creational)
 
