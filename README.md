@@ -19,6 +19,7 @@
 
   - [x] [策略模式](design-pattern/behavioral/strategy)
   - [x] [命令模式](design-pattern/behavioral/command)
+  - [x] [模板方法模式](design-pattern/behavioral/template-method)
 
 ## [算法与数据结构](leetcode)
 
