@@ -5,16 +5,17 @@
 
 ## [设计模式](design-pattern)
 
+- ### [创建型](design-pattern/creational)
+  
+  - [x] [工厂模式](design-pattern/creational/factory)
+  - [x] [单例模式](design-pattern/creational/singleton)
+
 - ### [结构型](design-pattern/structural)
 
   - [x] [门面模式](design-pattern/structural/facade)
   - [x] [代理模式](design-pattern/structural/proxy)
   - [x] [适配器模式](design-pattern/structural/adapter)
   - [x] [享元模式](design-pattern/structural/fly-weight)
-
-- ### [创建型](design-pattern/creational)
-
-  - [x] [单例模式](design-pattern/creational/singleton)
 
 - ### [行为型](design-pattern/behavioral)
 
