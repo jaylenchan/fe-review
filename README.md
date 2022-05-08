@@ -7,22 +7,27 @@
 
 - ### [创建型](design-pattern/creational)
   
-  - [x] [工厂模式](design-pattern/creational/factory)
-  - [x] [单例模式](design-pattern/creational/singleton)
+  - [x] [工厂模式⭐️](design-pattern/creational/factory)
+  - [x] [单例模式⭐️](design-pattern/creational/singleton)
 
 - ### [结构型](design-pattern/structural)
 
+  - [x] [代理模式⭐️](design-pattern/structural/proxy)
+  - [x] [适配器模式⭐️](design-pattern/structural/adapter)
+  - [ ] [装饰器模式⭐️]()
+  - [ ] [适配器⭐️]()
   - [x] [门面模式](design-pattern/structural/facade)
-  - [x] [代理模式](design-pattern/structural/proxy)
-  - [x] [适配器模式](design-pattern/structural/adapter)
   - [x] [享元模式](design-pattern/structural/fly-weight)
 
 - ### [行为型](design-pattern/behavioral)
 
-  - [x] [策略模式](design-pattern/behavioral/strategy)
-  - [x] [状态模式](design-pattern/behavioral/state)
+  - [x] [策略模式⭐️](design-pattern/behavioral/strategy)
+  - [x] [状态模式⭐️](design-pattern/behavioral/state)
+  - [ ] [观察者模式⭐️]() 
+  - [ ] [职责链模式⭐️]()
+  - [ ] [迭代器模式⭐️]()
+  - [x] [模板方法模式⭐️](design-pattern/behavioral/template-method)
   - [x] [命令模式](design-pattern/behavioral/command)
-  - [x] [模板方法模式](design-pattern/behavioral/template-method)
 
 ## [算法与数据结构](leetcode)
 
