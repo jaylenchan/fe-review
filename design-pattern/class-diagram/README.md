@@ -20,8 +20,8 @@ Interface-Realization:接口实现
 多个类之间或多或少有一定的联系，这些联系在类图上的表示是连线+箭头。
 
 - 依赖关系(Dependency)：B类实例的属性是A类实例：动物--->水（虚线+箭头）
-- 泛化关系(Generalization)：B类继承A类： 鸟——▷动物（实线+白空心箭头）
-- 实现关系(Implementation)：B类实现A接口：鸟---▷下蛋（虚线+白空心箭头）
+- 泛化关系(Generalization)：B类继承A类： 鸟——▷动物（实线+白三角）
+- 实现关系(Implementation)：B类实现A接口：鸟---▷下蛋（虚线+白三角）
 - 关联关系(Association)：B类跟A类的对应关系：
 
       唐老鸭1——1唐老爸
