@@ -7,27 +7,27 @@
 
 - ### [创建型](design-pattern/creational)
   
-  - [x] [工厂模式⭐️](design-pattern/creational/factory)
-  - [x] [单例模式⭐️](design-pattern/creational/singleton)
+  - [x] [工厂模式-Factory⭐️](design-pattern/creational/factory)
+  - [x] [单例模式-Singleton⭐️](design-pattern/creational/singleton)
 
 - ### [结构型](design-pattern/structural)
 
-  - [x] [代理模式⭐️](design-pattern/structural/proxy)
-  - [x] [适配器模式⭐️](design-pattern/structural/adapter)
-  - [ ] [装饰器模式⭐️]()
-  - [ ] [适配器⭐️]()
-  - [x] [门面模式](design-pattern/structural/facade)
-  - [x] [享元模式](design-pattern/structural/fly-weight)
+  - [x] [代理模式-Proxy⭐️](design-pattern/structural/proxy)
+  - [x] [适配器模式-Adapter⭐️](design-pattern/structural/adapter)
+  - [ ] [装饰器模式-Decorator⭐️](design-pattern/structural/decorator)
+  - [ ] [桥接模式-Bridge](design-pattern/structural/bridge)
+  - [x] [门面模式-Facade](design-pattern/structural/facade)
+  - [x] [享元模式-Flyweight](design-pattern/structural/fly-weight)
 
 - ### [行为型](design-pattern/behavioral)
 
-  - [x] [策略模式⭐️](design-pattern/behavioral/strategy)
-  - [x] [状态模式⭐️](design-pattern/behavioral/state)
-  - [ ] [观察者模式⭐️]() 
-  - [ ] [职责链模式⭐️]()
-  - [ ] [迭代器模式⭐️]()
-  - [x] [模板方法模式⭐️](design-pattern/behavioral/template-method)
-  - [x] [命令模式](design-pattern/behavioral/command)
+  - [x] [策略模式-Strategy⭐️](design-pattern/behavioral/strategy)
+  - [x] [状态模式-State⭐️](design-pattern/behavioral/state)
+  - [ ] [观察者模式-Observer⭐️](design-pattern/behavioral/observer)
+  - [ ] [职责链模式-Chain of Responsibility⭐️](design-pattern/behavioral/chain-of-responsibility)
+  - [ ] [迭代器模式-Iterator⭐️](design-pattern/behavioral/iterator)
+  - [x] [模板方法模式-Template Method⭐️](design-pattern/behavioral/template-method)
+  - [x] [命令模式-Command](design-pattern/behavioral/command)
 
 ## [算法与数据结构](leetcode)
 
