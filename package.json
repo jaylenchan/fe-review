@@ -14,7 +14,8 @@
     "test",
     "business",
     "algorithms",
-    "optimization"
+    "optimization",
+    "database"
   ],
   "devDependencies": {
     "@babel/core": "^7.17.5",
