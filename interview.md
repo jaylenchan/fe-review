@@ -91,5 +91,12 @@
    - 本地撤回隐私政策协议接口
    - 网络请求调用接口
 2. 桥接jsBridge的原理有了解过吗？实现的方式你知道的都有哪些？
+   - js调native：
+     - native往window注入api：由前端直接调用api
+     - js使用iframe.src发送，native拦截：由前端发送请求，让native拦截调用
+   - native调js：
+     - js api直接挂载到window，native可以直接调用
 3. 不同种方式实现jsBridge的优缺点了解过吗？
 4. 你开发的这个ReplaceSmartyPlugin的实现思路是怎么样的？
+   - 问题：开发产出的最终dist当中的 index.html实际上是一个php-smarty模板，最终的解析还需要交给后端去做。在开发环境当中，这个模板又不太可能交给后端，只能另想办法。
+   - 解决：利用htmlWebpackPluginBeforeHtmlProcessing和htmlWebpackPluginAlterAssetTags分别将相关的smarty语法链接修改成相关CDN或者开发环境的打包资源文件路径
