@@ -35,7 +35,27 @@
      - 强缓存和协商缓存是web缓存当中的概念。其中强缓存是用户发起请求压根不用向服务器发送真正的请求，直接从浏览器本地缓存当中获取即可。而协商缓存是用户会向服务器发请求，服务器判断资源的新鲜度，然后做出判断：资源如果更改了，返回新资源，状态码200，如果没有更改直接返回304，告诉浏览器使用本地缓存。
 2. 说下你的账号权限系统是如何设计的？
    - 实现技术：Vue-router路由守卫+递归
-   - 包含功能点：菜单权限+页面路由权限
+   - 包含功能点：登录功能+菜单权限+页面路由权限
+   - 登陆功能：
+      - 利用用户认证方式是jwt
+      - 前端在header.Authorization = getToken()获取保存在本地的token
+      - token具体保存在
+   - 路由权限：
+     - 利用vue-router的路由守卫beforeEach+afterEach配合完成
+     - 在router.js当中对于constantRoutes是所有用户都肯定会加载到的路由。而asyncRoutes则是对部分有该路由权限的用户才能访问到。
+
+   - token过期处理: 利用window自定义事件，发布订阅
+     - window.addEventListenr('logout',() => {
+       if(getToken()) {
+          // token过期
+         router.push('/login?logout=1')
+         Message.alert('账号登陆已经失效')
+       }
+     })
+    - axios.interceptors.response.use((res)=> {
+        if(res.code === 40001) window.dispatch('logout')
+     })
+
 3. 说下App文件上传的实现思路
    - 实现技术：Blob.prototype.slice() + axios实现
    - 包含功能点：分片上传、进度条、中断上传

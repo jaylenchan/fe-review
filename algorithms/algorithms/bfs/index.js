@@ -1,3 +1,5 @@
+// 实现广度优先遍历，最后输出a->a2->b->c->d->b2->c2->d2->e->f->g->e2->f2->g2
+
 function bfsData(data) {
   const queue = []
   const stack = []
