@@ -2,8 +2,6 @@
 
 ## 项目经历
 
-![img](../business/ekwing/pic/前端基础工程建设.png)
-
 ## 面试题
 
 ### Webpack
